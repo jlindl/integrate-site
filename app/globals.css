@@ -1,2 +1,14 @@
 @import "tailwindcss";
 
+/* Global marquee animation for scrolling logos */
+@keyframes logoMarquee {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	.animate-[logoMarquee_28s_linear_infinite] {
+		animation: none !important;
+	}
+}

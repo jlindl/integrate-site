@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import AboutClient from "../components/about/AboutClient";
 
 export default function AboutPage() {
@@ -8,7 +7,6 @@ export default function AboutPage() {
       <Header />
       {/* Client content with animations */}
       <AboutClient />
-      <Footer />
     </div>
   );
 }
