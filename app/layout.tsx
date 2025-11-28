@@ -17,9 +17,10 @@ export const metadata: Metadata = {
   title: "Integrate",
   description: "Integrations, automations, and AI workflows",
   icons: {
-    icon: "/logos/integrate.png",
-    shortcut: "/logos/integrate.png",
-    apple: "/logos/integrate.png",
+    // Primary favicon (PNG). Browsers may still request /favicon.ico; optional to add later.
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
