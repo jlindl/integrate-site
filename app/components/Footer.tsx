@@ -43,13 +43,22 @@ export default function Footer() {
             <div className="text-sm font-semibold text-gray-900 mb-3">Resources</div>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">Case studies</Link>
+                <Link href="/resources" className="text-gray-600 hover:text-gray-900 transition-colors">Resource Hub</Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">Docs</Link>
+                <Link href="/resources/case-studies" className="text-gray-600 hover:text-gray-900 transition-colors">Case studies</Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">Status</Link>
+                <Link href="/resources/automation-examples" className="text-gray-600 hover:text-gray-900 transition-colors">Automation Examples</Link>
+              </li>
+              <li>
+                <Link href="/resources/benchmark-data" className="text-gray-600 hover:text-gray-900 transition-colors">Benchmark Data</Link>
+              </li>
+              <li>
+                <Link href="/resources/integration-library" className="text-gray-600 hover:text-gray-900 transition-colors">Integration Library</Link>
+              </li>
+              <li>
+                <Link href="/resources/faqs" className="text-gray-600 hover:text-gray-900 transition-colors">FAQs</Link>
               </li>
             </ul>
           </div>

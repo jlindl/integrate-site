@@ -61,10 +61,17 @@ export default function Landing() {
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
             }}
-            className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-3.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm"
+            className="group relative inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium overflow-hidden"
+            style={{
+              background: 'linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 25%, #d4d4d4 50%, #f0f0f0 75%, #e0e0e0 100%)',
+              boxShadow: 'inset 0 1px 2px rgba(255,255,255,0.8), inset 0 -1px 2px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.1)',
+              border: '1px solid rgba(255,255,255,0.6)'
+            }}
           >
-            <span className="inline-flex h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-            <span>AI reception & sales automation for B2B companies</span>
+            {/* Metallic shine overlay */}
+            <span className="absolute inset-0 bg-linear-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_6px_rgba(34,197,94,0.6)]" />
+            <span className="relative text-gray-700">AI reception & sales automation for B2B companies</span>
           </motion.div>
 
           <motion.h1 
@@ -84,8 +91,8 @@ export default function Landing() {
             }}
             className="text-base md:text-lg text-gray-600 max-w-xl leading-relaxed"
           >
-            Integrate answers calls, qualifies prospects, and handles outreach automatically —
-            so your team can focus on closing deals, not chasing them.
+            Integrate answers calls, qualifies prospects, and handles outreach automatically, 
+            so your team can focus on closing deals instead of chasing them.
           </motion.p>
 
           <motion.div 
@@ -103,14 +110,17 @@ export default function Landing() {
             >
               Claim your free automation audit
             </motion.button>
-            <motion.button 
-              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+            <motion.a 
+              href="/resources"
               whileHover={{ scale: 1.02, y: -1 }}
               whileTap={{ scale: 0.98 }}
-              className="px-7 py-3.5 rounded-full border border-gray-200 text-sm font-medium text-gray-800 hover:border-gray-300 hover:bg-gray-50 bg-white transition-all duration-200 shadow-sm hover:shadow-lg"
+              className="px-7 py-3.5 rounded-full border border-gray-200 text-sm font-medium text-gray-800 hover:border-gray-300 hover:bg-gray-50 bg-white transition-all duration-200 shadow-sm hover:shadow-lg flex items-center gap-2"
             >
-              Watch a 2-minute demo
-            </motion.button>
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+              Resources
+            </motion.a>
           </motion.div>
 
           <motion.div 

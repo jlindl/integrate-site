@@ -134,7 +134,7 @@ export default function TechStack() {
 
             <p className="text-base md:text-lg text-gray-600 mt-6 leading-relaxed">
               We don&apos;t reinvent the wheel. We combine the best AI, voice, and data tools 
-              into powerful automations that actually work—no proprietary lock-in, just proven technology.
+              into powerful automations that actually work, no proprietary lock-in, just proven technology.
             </p>
           </motion.div>
 

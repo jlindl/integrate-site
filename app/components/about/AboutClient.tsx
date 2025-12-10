@@ -3,6 +3,7 @@
 import { motion, type Variants } from "framer-motion";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Testimonials from "../Testimonials";
 import {
   ArrowRight,
   Sparkles,
@@ -12,7 +13,6 @@ import {
   BarChart3,
   ShieldCheck,
   Workflow,
-  Star,
 } from "lucide-react";
 
 const fadeInUp: Variants = {
@@ -276,73 +276,112 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* Mission Section - Black glass card (repurposed as Purpose) */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-            className="relative"
-          >
-            <div className="absolute inset-0 bg-linear-to-br from-gray-900 via-black to-gray-900 rounded-3xl blur-2xl opacity-20 scale-105" />
-            <div className="relative bg-black/95 rounded-3xl p-12 md:p-16 lg:p-20 overflow-hidden border border-white/10">
-              {/* Animated shine effect */}
-              <motion.div
-                animate={{
-                  x: ["-100%", "100%"],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatDelay: 2,
-                  ease: "easeInOut",
-                }}
-                className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent"
-              />
+      {/* Purpose & Promise - Redesigned */}
+      <section className="py-24 md:py-32 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+          <div className="absolute top-1/4 -left-64 w-[600px] h-[600px] bg-gray-200/40 rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/4 -right-64 w-[600px] h-[600px] bg-gray-200/40 rounded-full blur-[120px]" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+            >
+              <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 border border-gray-200 mb-6">
+                <Sparkles className="w-4 h-4 text-gray-600" />
+                <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Our Core Mission</span>
+              </motion.div>
               
-              <div className="relative z-10 max-w-3xl mx-auto text-center">
+              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+                Purpose & <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 via-gray-800 to-gray-500 animate-gradient bg-300%">Promise</span>
+              </motion.h2>
+              
+              <motion.div variants={fadeInUp} className="space-y-8">
+                <div className="relative pl-8 border-l-2 border-gray-200 hover:border-gray-900 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">The Purpose</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    To dismantle the complexity barrier. We believe advanced automation shouldn&apos;t require an army of engineers. We exist to bridge the gap between your operational ambition and technical reality.
+                  </p>
+                </div>
+                
+                <div className="relative pl-8 border-l-2 border-gray-200 hover:border-gray-900 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">The Promise</h3>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Resilient execution, not just code. We promise systems that self-heal, adapt to your growth, and deliver measurable leverage from Day 1. If it doesn&apos;t drive ROI, it doesn&apos;t ship.
+                  </p>
+                </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Column - Visual/Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="absolute inset-0 bg-linear-to-br from-gray-100 to-white rounded-3xl transform rotate-3 scale-105 opacity-50" />
+              <div className="relative bg-black rounded-3xl p-8 md:p-12 overflow-hidden border border-gray-800 shadow-2xl">
+                {/* Metallic sheen animation */}
                 <motion.div
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                  className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 mb-8 shadow-[0_0_60px_rgba(255,255,255,0.08)]"
-                >
-                  <Sparkles className="w-8 h-8 text-white" />
-                </motion.div>
+                  animate={{ x: ["-100%", "200%"] }}
+                  transition={{ duration: 4, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
+                  className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -skew-x-12"
+                />
                 
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                  Purpose & Promise
-                </h2>
-                <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-                  We compound operational leverage by fusing deterministic processes with adaptive intelligence—yielding fewer manual pivots, higher conversion surface area, and resilient execution.
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-                  {[
-                    "Resilient reliability",
-                    "Accelerated deployment",
-                    "Seamless alignment",
-                    "Ongoing refinement",
-                  ].map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1, duration: 0.6 }}
-                      className="flex items-center gap-3 text-left"
-                    >
-                      <Star className="w-5 h-5 text-white shrink-0" />
-                      <span className="text-gray-300">{item}</span>
-                    </motion.div>
-                  ))}
+                <div className="relative z-10 space-y-8">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+                      <ShieldCheck className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="text-xl font-semibold text-white">The Integrate Standard</h4>
+                  </div>
+
+                  <ul className="space-y-6">
+                    {[
+                      "Zero-latency decision engines",
+                      "Enterprise-grade security & compliance",
+                      "24/7 autonomous monitoring",
+                      "White-glove implementation support"
+                    ].map((item, i) => (
+                      <motion.li 
+                        key={i}
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.2 + (i * 0.1) }}
+                        className="flex items-center gap-4 text-gray-300"
+                      >
+                        <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                          <div className="w-2 h-2 rounded-full bg-white" />
+                        </div>
+                        <span className="text-lg">{item}</span>
+                      </motion.li>
+                    ))}
+                  </ul>
+
+                  <div className="pt-8 mt-8 border-t border-white/10">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="text-sm text-gray-400 uppercase tracking-wider mb-1">Uptime Guarantee</div>
+                        <div className="text-3xl font-bold text-white">99.9%</div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm text-gray-400 uppercase tracking-wider mb-1">Client Retention</div>
+                        <div className="text-3xl font-bold text-white">100%</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -516,40 +555,11 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* Testimonials - concise slider (static) */}
-      <section className="py-24 md:py-32 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 md:px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Operator Feedback</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Signals from teams scaling with our orchestration layer.</p>
-          </motion.div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { quote: "We retired three legacy tools in month one.", role: "RevOps Director" },
-              { quote: "Daily standups shifted from status to strategy.", role: "COO" },
-              { quote: "Zero-downtime rollout across seven regions.", role: "Infrastructure Lead" },
-            ].map((t) => (
-              <motion.div
-                key={t.quote}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.55 }}
-                className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-xl transition-all"
-              >
-                <p className="text-gray-700 leading-relaxed mb-4">“{t.quote}”</p>
-                <div className="text-sm font-medium text-gray-500 uppercase tracking-wide">{t.role}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Testimonials - Replaced with Carousel */}
+      <Testimonials
+        title="Operator Feedback"
+        subtitle="Signals from teams scaling with our orchestration layer."
+      />
 
       {/* CTA Section - Premium black */}
       <section className="relative py-24 md:py-32 overflow-hidden">
