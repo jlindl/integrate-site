@@ -62,7 +62,7 @@ export default function OutboundFlow() {
             "
           >
             {/* Step icon */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <div className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-[13px] font-semibold text-gray-700 bg-white">
                 {step.icon}
               </div>
@@ -79,7 +79,7 @@ export default function OutboundFlow() {
         ))}
 
         {/* Ambient gradient */}
-        <div className="pointer-events-none absolute -right-10 bottom-0 w-40 h-40 rounded-full bg-gradient-to-tr from-gray-100 to-gray-200 blur-3xl opacity-70" />
+        <div className="pointer-events-none absolute -right-10 bottom-0 w-40 h-40 rounded-full bg-linear-to-tr from-gray-100 to-gray-200 blur-3xl opacity-70" />
       </div>
     </div>
   );

@@ -75,7 +75,7 @@ export default function BenchmarkDataPage() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -87,7 +87,7 @@ export default function BenchmarkDataPage() {
       <section className="relative pt-32 pb-24 overflow-hidden">
         {/* Dynamic Background */}
         <div className="absolute inset-0 bg-white">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]" />
           <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-gray-200 opacity-20 blur-[100px]" />
         </div>
 
@@ -181,7 +181,7 @@ export default function BenchmarkDataPage() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="relative p-8 rounded-[2rem] border border-gray-100 overflow-hidden group"
+                className="relative p-8 rounded-4xl border border-gray-100 overflow-hidden group"
                 style={{
                   background: `linear-gradient(145deg, #ffffff 0%, #f5f5f5 100%)`,
                   boxShadow: '0 10px 40px -10px rgba(0,0,0,0.05)'
@@ -481,7 +481,7 @@ export default function BenchmarkDataPage() {
       {/* Download Report CTA */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gray-50" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-50" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] opacity-50" />
         
         <div className="relative max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
