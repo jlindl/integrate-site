@@ -43,18 +43,6 @@ export default function Footer() {
             <div className="text-sm font-semibold text-gray-900 mb-3">Resources</div>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/resources" className="text-gray-600 hover:text-gray-900 transition-colors">Resource Hub</Link>
-              </li>
-              <li>
-                <Link href="/resources/case-studies" className="text-gray-600 hover:text-gray-900 transition-colors">Case studies</Link>
-              </li>
-              <li>
-                <Link href="/resources/automation-examples" className="text-gray-600 hover:text-gray-900 transition-colors">Automation Examples</Link>
-              </li>
-              <li>
-                <Link href="/resources/benchmark-data" className="text-gray-600 hover:text-gray-900 transition-colors">Benchmark Data</Link>
-              </li>
-              <li>
                 <Link href="/resources/integration-library" className="text-gray-600 hover:text-gray-900 transition-colors">Integration Library</Link>
               </li>
               <li>
@@ -67,7 +55,7 @@ export default function Footer() {
           <div>
             <div className="text-sm font-semibold text-gray-900 mb-3">Connect</div>
             <div className="flex items-center gap-3">
-              <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noreferrer" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
+              <a href="https://www.linkedin.com/company/integrate-tech" aria-label="LinkedIn" target="_blank" rel="noreferrer" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.94 8.5H3.75V20.25H6.94V8.5Z" fill="#111827"/>
                   <path d="M5.34 3.75C4.32 3.75 3.5 4.57 3.5 5.59C3.5 6.61 4.32 7.43 5.34 7.43C6.36 7.43 7.18 6.61 7.18 5.59C7.18 4.57 6.36 3.75 5.34 3.75Z" fill="#111827"/>
