@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "dom": "^0.0.3",
     "framer-motion": "^12.23.24",
     "googleapis": "^140.0.1",
