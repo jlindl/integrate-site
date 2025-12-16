@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html, body {
+	overflow-x: hidden;
+}
+
+/* Reduce tap highlight on mobile without affecting desktop */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 /* Global marquee animation for scrolling logos */
 @keyframes logoMarquee {
 	0% { transform: translateX(0); }
