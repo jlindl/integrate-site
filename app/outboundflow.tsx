@@ -36,7 +36,7 @@ export default function OutboundFlow() {
             Outbound AI sales workflow
           </h3>
           <p className="text-xs text-gray-500 mt-1">
-            How Apex automates cold outreach and qualification.
+            How Integrate automates cold outreach and qualification.
           </p>
         </div>
         <span className="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-600">

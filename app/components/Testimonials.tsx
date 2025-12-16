@@ -19,7 +19,7 @@ const defaultItems: Testimonial[] = [
   {
     company: "TRAIDINGLAB",
     quote:
-      "Apex automated our inbound and follow-ups in under two weeks. We now capture and convert leads 24/7.",
+      "Integrate automated our inbound and follow-ups in under two weeks. We now capture and convert leads 24/7.",
   },
   {
     company: "Allied Insurance",
@@ -71,7 +71,7 @@ export default function Testimonials({ items = defaultItems, title, subtitle }: 
             {title || "What clients say"}
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
-            {subtitle || "Real results from teams using Apex to automate voice, email and CRM."}
+            {subtitle || "Real results from teams using Integrate to automate voice, email and CRM."}
           </p>
         </motion.div>
 

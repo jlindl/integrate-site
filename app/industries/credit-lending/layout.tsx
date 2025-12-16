@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Credit & Lending Firms | Apex Automations",
+  title: "AI Automation for Credit & Lending Firms | Integrate",
   description:
     "Automate loan applications, document collation, risk pre-screening, and payment follow-ups for your lending business. FCA compliant workflows. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "loan origination software",
   ],
   openGraph: {
-    title: "AI Automation for Credit & Lending Firms | Apex Automations",
+    title: "AI Automation for Credit & Lending Firms | Integrate",
     description:
       "Automate loan applications, document collation, risk pre-screening, and payment follow-ups. FCA compliant workflows built for UK lenders.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Credit & Lending Firms | Apex Automations",
+    title: "AI Automation for Credit & Lending Firms | Integrate",
     description:
       "Automate loan applications, document collation, risk pre-screening, and payment follow-ups. FCA compliant workflows built for UK lenders.",
   },

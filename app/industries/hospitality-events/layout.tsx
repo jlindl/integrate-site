@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Hospitality & Events | Apex Automations",
+  title: "AI Automation for Hospitality & Events | Integrate",
   description:
     "Automate booking handling, payments, staffing coordination, and review requests for restaurants, hotels, and event venues. PCI compliant. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "TripAdvisor review automation",
   ],
   openGraph: {
-    title: "AI Automation for Hospitality & Events | Apex Automations",
+    title: "AI Automation for Hospitality & Events | Integrate",
     description:
       "Automate booking handling, payments, staffing coordination, and review requests. Elevate guest experience for restaurants, hotels, and event venues.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Hospitality & Events | Apex Automations",
+    title: "AI Automation for Hospitality & Events | Integrate",
     description:
       "Automate booking handling, payments, staffing coordination, and review requests. Elevate guest experience for restaurants, hotels, and event venues.",
   },

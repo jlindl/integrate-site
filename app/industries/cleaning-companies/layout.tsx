@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Cleaning Companies | Apex Automations",
+  title: "AI Automation for Cleaning Companies | Integrate",
   description:
     "Automate quote intake, job scheduling, CRM pipeline, and review collection for your cleaning business. Scale operations without adding staff. UK-based support.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "automated scheduling cleaning",
   ],
   openGraph: {
-    title: "AI Automation for Cleaning Companies | Apex Automations",
+    title: "AI Automation for Cleaning Companies | Integrate",
     description:
       "Automate quote intake, job scheduling, CRM pipeline, and review collection. Scale your cleaning business without adding staff.",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Cleaning Companies | Apex Automations",
+    title: "AI Automation for Cleaning Companies | Integrate",
     description:
       "Automate quote intake, job scheduling, CRM pipeline, and review collection. Scale your cleaning business without adding staff.",
   },

@@ -32,7 +32,7 @@ export default function CallFlow() {
             Inbound AI call workflow
           </h3>
           <p className="text-xs text-gray-500 mt-1">
-            The 4-step process Apex uses to convert calls into qualified leads.
+            The 4-step process Integrate uses to convert calls into qualified leads.
           </p>
         </div>
         <span className="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-600">

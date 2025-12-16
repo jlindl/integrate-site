@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Estate & Letting Agents | Apex Automations",
+  title: "AI Automation for Estate & Letting Agents | Integrate",
   description:
     "Automate viewing bookings, vendor enquiries, WhatsApp follow-ups, and contract collection for your estate agency. Respond to leads in under 2 minutes. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "property sales progression",
   ],
   openGraph: {
-    title: "AI Automation for Estate & Letting Agents | Apex Automations",
+    title: "AI Automation for Estate & Letting Agents | Integrate",
     description:
       "Automate viewing bookings, vendor enquiries, WhatsApp follow-ups, and contract collection. Respond to property leads in under 2 minutes.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Estate & Letting Agents | Apex Automations",
+    title: "AI Automation for Estate & Letting Agents | Integrate",
     description:
       "Automate viewing bookings, vendor enquiries, WhatsApp follow-ups, and contract collection. Respond to property leads in under 2 minutes.",
   },

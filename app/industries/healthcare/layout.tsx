@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Clinics & Private Healthcare | Apex Automations",
+  title: "AI Automation for Clinics & Private Healthcare | Integrate",
   description:
     "Automate appointment booking, patient data intake, and insurance pre-checks for clinics and private healthcare. CQC compliant, GDPR secure. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "patient journey automation",
   ],
   openGraph: {
-    title: "AI Automation for Clinics & Private Healthcare | Apex Automations",
+    title: "AI Automation for Clinics & Private Healthcare | Integrate",
     description:
       "Automate appointment booking, patient data intake, and insurance pre-checks. CQC compliant automation for clinics and private healthcare.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Clinics & Private Healthcare | Apex Automations",
+    title: "AI Automation for Clinics & Private Healthcare | Integrate",
     description:
       "Automate appointment booking, patient data intake, and insurance pre-checks. CQC compliant automation for clinics and private healthcare.",
   },

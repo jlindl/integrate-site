@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Law Firms & Solicitors | Apex Automations",
+  title: "AI Automation for Law Firms & Solicitors | Integrate",
   description:
     "Automate case intake, claims data collection, and evidence upload flows for your law firm. SRA compliant, GDPR secure. UK-based support for legal practices.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "automated case management",
   ],
   openGraph: {
-    title: "AI Automation for Law Firms & Solicitors | Apex Automations",
+    title: "AI Automation for Law Firms & Solicitors | Integrate",
     description:
       "Automate case intake, claims data collection, and evidence upload flows. SRA compliant, GDPR secure automation for legal practices.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Law Firms & Solicitors | Apex Automations",
+    title: "AI Automation for Law Firms & Solicitors | Integrate",
     description:
       "Automate case intake, claims data collection, and evidence upload flows. SRA compliant, GDPR secure automation for legal practices.",
   },

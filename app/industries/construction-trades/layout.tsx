@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Construction & Trades | Apex Automations",
+  title: "AI Automation for Construction & Trades | Integrate",
   description:
     "Automate quote intake, job scheduling, H&S documentation, and renewal reminders for builders, plumbers, electricians, and contractors. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "trade business management",
   ],
   openGraph: {
-    title: "AI Automation for Construction & Trades | Apex Automations",
+    title: "AI Automation for Construction & Trades | Integrate",
     description:
       "Automate quote intake, job scheduling, H&S documentation, and renewal reminders. Cut admin time by 15+ hours per week.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Construction & Trades | Apex Automations",
+    title: "AI Automation for Construction & Trades | Integrate",
     description:
       "Automate quote intake, job scheduling, H&S documentation, and renewal reminders. Cut admin time by 15+ hours per week.",
   },

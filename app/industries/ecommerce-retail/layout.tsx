@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Ecommerce & Retail | Apex Automations",
+  title: "AI Automation for Ecommerce & Retail | Integrate",
   description:
     "Automate AI live chat, support deflection, abandoned cart recovery, and upsell flows for your online store. Reduce support costs by 70%. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "ecommerce support deflection",
   ],
   openGraph: {
-    title: "AI Automation for Ecommerce & Retail | Apex Automations",
+    title: "AI Automation for Ecommerce & Retail | Integrate",
     description:
       "Automate AI live chat, support deflection, abandoned cart recovery, and upsell flows. Reduce support costs by 70% with your AI receptionist.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Ecommerce & Retail | Apex Automations",
+    title: "AI Automation for Ecommerce & Retail | Integrate",
     description:
       "Automate AI live chat, support deflection, abandoned cart recovery, and upsell flows. Reduce support costs by 70% with your AI receptionist.",
   },

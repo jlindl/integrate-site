@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Financial Advisors & Wealth Managers | Apex Automations",
+  title: "AI Automation for Financial Advisors & Wealth Managers | Integrate",
   description:
     "Automate lead capture, KYC workflows, fact finders, and appointment setting for IFAs and wealth managers. FCA compliant, GDPR secure. UK-based support.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "advisor practice management",
   ],
   openGraph: {
-    title: "AI Automation for Financial Advisors & Wealth Managers | Apex Automations",
+    title: "AI Automation for Financial Advisors & Wealth Managers | Integrate",
     description:
       "Automate lead capture, KYC workflows, fact finders, and appointment setting. FCA compliant automation for IFAs and wealth managers.",
     type: "website",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Financial Advisors & Wealth Managers | Apex Automations",
+    title: "AI Automation for Financial Advisors & Wealth Managers | Integrate",
     description:
       "Automate lead capture, KYC workflows, fact finders, and appointment setting. FCA compliant automation for IFAs and wealth managers.",
   },

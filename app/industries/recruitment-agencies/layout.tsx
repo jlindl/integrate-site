@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Recruitment Agencies | Apex Automations",
+  title: "AI Automation for Recruitment Agencies | Integrate",
   description:
     "Automate candidate sourcing, CV parsing, interview scheduling, and outreach for your recruitment agency. Place more candidates with less admin. UK-based support.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "talent acquisition automation",
   ],
   openGraph: {
-    title: "AI Automation for Recruitment Agencies | Apex Automations",
+    title: "AI Automation for Recruitment Agencies | Integrate",
     description:
       "Automate candidate sourcing, CV parsing, interview scheduling, and outreach. Place more candidates with less admin.",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Automation for Recruitment Agencies | Apex Automations",
+    title: "AI Automation for Recruitment Agencies | Integrate",
     description:
       "Automate candidate sourcing, CV parsing, interview scheduling, and outreach. Place more candidates with less admin.",
   },
