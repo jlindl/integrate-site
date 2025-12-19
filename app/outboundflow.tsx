@@ -2,26 +2,26 @@
 
 import { motion } from "framer-motion";
 
-const steps = [
+const outcomes = [
   {
-    icon: "➕",
-    title: "Lead identified",
-    desc: "Found via Google Maps, directories or your uploaded lead lists.",
+    icon: "📈",
+    title: "More conversations booked",
+    desc: "Consistent outreach that keeps your pipeline moving.",
   },
   {
-    icon: "📤",
-    title: "AI sales agent dials automatically",
-    desc: "Outbound calls placed with natural, human-like speech.",
+    icon: "⏱️",
+    title: "Less time on manual dialling",
+    desc: "Your team stays focused on closing, not chasing.",
   },
   {
-    icon: "💬",
-    title: "AI handles the conversation",
-    desc: "Explains your offer, gathers details and handles objections.",
+    icon: "🎯",
+    title: "Better-fit prospects",
+    desc: "Only interested leads get passed through, with the key context captured.",
   },
   {
     icon: "📩",
-    title: "Qualified lead sent to you",
-    desc: "Delivered instantly via SMS, WhatsApp, email or your CRM.",
+    title: "Instant handoff to your team",
+    desc: "Delivered via SMS, WhatsApp, email or your CRM the moment it’s ready.",
   },
 ];
 
@@ -33,23 +33,23 @@ export default function OutboundFlow() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-sm font-semibold text-gray-900">
-            Outbound AI sales workflow
+            Outbound outcomes
           </h3>
           <p className="text-xs text-gray-500 mt-1">
-            How Integrate automates cold outreach and qualification.
+            Generate more sales conversations without adding headcount.
           </p>
         </div>
         <span className="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-600">
-          Automated
+          Results
         </span>
       </div>
 
       {/* Vertical stacked floating steps */}
       <div className="space-y-4 relative">
 
-        {steps.map((step, index) => (
+        {outcomes.map((outcome, index) => (
           <motion.div
-            key={step.title}
+            key={outcome.title}
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: index * 0.12 }}
@@ -64,15 +64,15 @@ export default function OutboundFlow() {
             {/* Step icon */}
             <div className="shrink-0">
               <div className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-[13px] font-semibold text-gray-700 bg-white">
-                {step.icon}
+                {outcome.icon}
               </div>
             </div>
 
             {/* Text */}
             <div>
-              <p className="text-sm font-semibold text-gray-900">{step.title}</p>
+              <p className="text-sm font-semibold text-gray-900">{outcome.title}</p>
               <p className="text-xs md:text-[13px] text-gray-600 mt-1 leading-relaxed">
-                {step.desc}
+                {outcome.desc}
               </p>
             </div>
           </motion.div>

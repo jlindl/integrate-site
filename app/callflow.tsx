@@ -2,22 +2,26 @@
 
 import { motion } from "framer-motion";
 
-const steps = [
+const outcomes = [
   {
-    title: "Incoming call",
-    desc: "A customer contacts your business.",
+    icon: "📞",
+    title: "Fewer missed opportunities",
+    desc: "Every inbound call gets handled quickly and consistently.",
   },
   {
-    title: "AI receptionist answers",
-    desc: "Instant 24/7 call handling with your script + tone.",
+    icon: "✅",
+    title: "More qualified enquiries",
+    desc: "Only the right calls reach your team, with the key details captured.",
   },
   {
-    title: "Qualification",
-    desc: "AI collects job details, location, urgency and intent.",
+    icon: "⚡",
+    title: "Faster response, better experience",
+    desc: "Callers get answers and next steps without waiting for a callback.",
   },
   {
-    title: "Lead delivered",
-    desc: "Automatically sent to your phone, email or CRM.",
+    icon: "📨",
+    title: "Clean handoff to your workflow",
+    desc: "Summaries and contact details delivered to your phone, inbox or CRM.",
   },
 ];
 
@@ -29,23 +33,23 @@ export default function CallFlow() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-sm font-semibold text-gray-900">
-            Inbound AI call workflow
+            Inbound call outcomes
           </h3>
           <p className="text-xs text-gray-500 mt-1">
-            The 4-step process Integrate uses to convert calls into qualified leads.
+            Turn every inbound call into a qualified opportunity — even when you’re busy.
           </p>
         </div>
         <span className="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-600">
-          Automated
+          Results
         </span>
       </div>
 
       {/* Vertical stacked floating steps */}
       <div className="space-y-4 relative">
 
-        {steps.map((step, index) => (
+        {outcomes.map((outcome, index) => (
           <motion.div
-            key={step.title}
+            key={outcome.title}
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: index * 0.12 }}
@@ -57,25 +61,25 @@ export default function CallFlow() {
               flex items-start gap-4
             "
           >
-            {/* Step number */}
-            <div className="flex-shrink-0">
-              <div className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-xs font-semibold text-gray-700 bg-white">
-                {index + 1}
+            {/* Icon */}
+            <div className="shrink-0">
+              <div className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-[13px] font-semibold text-gray-700 bg-white">
+                {outcome.icon}
               </div>
             </div>
 
             {/* Text */}
             <div>
-              <p className="text-sm font-semibold text-gray-900">{step.title}</p>
+              <p className="text-sm font-semibold text-gray-900">{outcome.title}</p>
               <p className="text-xs md:text-[13px] text-gray-600 mt-1 leading-relaxed">
-                {step.desc}
+                {outcome.desc}
               </p>
             </div>
           </motion.div>
         ))}
 
         {/* Ambient gradient */}
-        <div className="pointer-events-none absolute -right-10 bottom-0 w-40 h-40 rounded-full bg-gradient-to-tr from-gray-100 to-gray-200 blur-3xl opacity-70" />
+        <div className="pointer-events-none absolute -right-10 bottom-0 w-40 h-40 rounded-full bg-linear-to-tr from-gray-100 to-gray-200 blur-3xl opacity-70" />
       </div>
     </div>
   );

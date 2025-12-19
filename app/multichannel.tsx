@@ -2,26 +2,26 @@
 
 import { motion } from "framer-motion";
 
-const steps = [
+const outcomes = [
   {
-    icon: "🔎",
-    title: "Lead scraping",
-    desc: "Scraped from Google Maps, directories or your lists.",
+    icon: "💬",
+    title: "More replies across channels",
+    desc: "Reach prospects where they actually respond.",
   },
   {
-    icon: "📊",
-    title: "Data enrichment",
-    desc: "Adds emails, phone numbers and LinkedIn profiles.",
+    icon: "🔁",
+    title: "Consistent follow-up",
+    desc: "No leads slipping through the cracks when your team gets busy.",
   },
   {
-    icon: "🧠",
-    title: "AI filtering",
-    desc: "Filters by industry, location and decision-maker.",
+    icon: "🧾",
+    title: "Cleaner lead context",
+    desc: "Contact details, notes and next steps captured in one place.",
   },
   {
-    icon: "📣",
-    title: "Multi-channel outreach",
-    desc: "LinkedIn, email, WhatsApp or outbound calls.",
+    icon: "🕒",
+    title: "Less manual admin",
+    desc: "Spend less time juggling tools and more time closing.",
   },
 ];
 
@@ -33,23 +33,23 @@ export default function MultiChannel() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <h3 className="text-sm font-semibold text-gray-900">
-            AI multi-channel lead generation
+            Multi-channel outcomes
           </h3>
           <p className="text-xs text-gray-500 mt-1">
-            From scraping to outreach — fully automated.
+            More leads engaged, less effort from your team.
           </p>
         </div>
         <span className="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-600">
-          Automated
+          Results
         </span>
       </div>
 
       {/* Floating stack */}
       <div className="space-y-4 relative">
 
-        {steps.map((step, index) => (
+        {outcomes.map((outcome, index) => (
           <motion.div
-            key={step.title}
+            key={outcome.title}
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, delay: index * 0.12 }}
@@ -62,24 +62,24 @@ export default function MultiChannel() {
             "
           >
             {/* Icon */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <div className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-[14px] font-semibold text-gray-700 bg-white">
-                {step.icon}
+                {outcome.icon}
               </div>
             </div>
 
             {/* Text */}
             <div>
-              <p className="text-sm font-semibold text-gray-900">{step.title}</p>
+              <p className="text-sm font-semibold text-gray-900">{outcome.title}</p>
               <p className="text-xs md:text-[13px] text-gray-600 mt-1 leading-relaxed">
-                {step.desc}
+                {outcome.desc}
               </p>
             </div>
           </motion.div>
         ))}
 
         {/* Ambient gradient */}
-        <div className="pointer-events-none absolute -right-10 bottom-0 w-40 h-40 rounded-full bg-gradient-to-tr from-gray-100 to-gray-200 blur-3xl opacity-70" />
+        <div className="pointer-events-none absolute -right-10 bottom-0 w-40 h-40 rounded-full bg-linear-to-tr from-gray-100 to-gray-200 blur-3xl opacity-70" />
       </div>
     </div>
   );
