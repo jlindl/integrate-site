@@ -52,7 +52,6 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-600">
           <a href="/solutions" className="hover:text-black transition-colors duration-200">Solutions</a>
           <a href="/how-it-works" className="hover:text-black transition-colors duration-200">How it works</a>
-          <a href="/industries" className="hover:text-black transition-colors duration-200">Industries</a>
           <a href="/pricing" className="hover:text-black transition-colors duration-200">Pricing</a>
           <a href="/about" className="hover:text-black transition-colors duration-200">About</a>
         </nav>
@@ -130,7 +129,6 @@ export default function Header() {
               {[
                 { href: "/solutions", label: "Solutions" },
                 { href: "/how-it-works", label: "How it works" },
-                { href: "/industries", label: "Industries" },
                 { href: "/pricing", label: "Pricing" },
                 { href: "/about", label: "About" },
               ].map((item) => (
