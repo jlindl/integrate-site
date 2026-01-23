@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://integrate.co.uk/sitemap.xml
+Sitemap: https://integrate-tech.co.uk/sitemap.xml

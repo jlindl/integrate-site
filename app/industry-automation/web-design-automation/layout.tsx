@@ -16,6 +16,9 @@ export const metadata: Metadata = {
         description: "Automate client asset collection, onboarding, and feedback loops. Streamline your web design agency operations.",
         type: "website",
     },
+    alternates: {
+        canonical: "https://integrate-tech.co.uk/industry-automation/web-design-automation",
+    },
 };
 
 export default function WebDesignAutomationLayout({

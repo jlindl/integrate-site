@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate case intake, claims data collection, and evidence upload flows. SRA compliant, GDPR secure automation for legal practices.",
   },
   alternates: {
-    canonical: "https://integrate.co.uk/industry-automation/legal-automation",
+    canonical: "https://integrate-tech.co.uk/industry-automation/legal-automation",
   },
 };
 

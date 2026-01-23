@@ -16,6 +16,9 @@ export const metadata: Metadata = {
         description: "Scale your ecommerce brand with AI. Automate inventory alerts, customer support tickets, and order tracking notifications.",
         type: "website",
     },
+    alternates: {
+        canonical: "https://integrate-tech.co.uk/industry-automation/ecommerce-automation",
+    },
 };
 
 export default function EcommerceAutomationLayout({

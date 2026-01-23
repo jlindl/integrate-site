@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate viewing bookings, vendor enquiries, WhatsApp follow-ups, and contract collection. Respond to property leads in under 2 minutes.",
   },
   alternates: {
-    canonical: "https://integrate.co.uk/industry-automation/real-estate-automation",
+    canonical: "https://integrate-tech.co.uk/industry-automation/real-estate-automation",
   },
 };
 

@@ -67,13 +67,13 @@ export default function Footer() {
                   <path d="M18.244 3.75H21L14.68 10.98L22 20.25H16.52L12.055 14.54L6.96 20.25H3.2L9.92 12.59L3 3.75H8.64L12.645 8.94L18.244 3.75ZM17.292 18.6H18.8L7.8 5.31H6.18L17.292 18.6Z" fill="#111827" />
                 </svg>
               </a>
-              <a href="mailto:hello@integrate.co.uk" aria-label="Email" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
+              <a href="mailto:hello@integrate-tech.co.uk" aria-label="Email" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 6.75H20C20.69 6.75 21.25 7.31 21.25 8V16C21.25 16.69 20.69 17.25 20 17.25H4C3.31 17.25 2.75 16.69 2.75 16V8C2.75 7.31 3.31 6.75 4 6.75ZM20 8L12 12.75L4 8V8" stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
             </div>
-            <p className="mt-3 text-sm text-gray-600">hello@integrate.co.uk</p>
+            <p className="mt-3 text-sm text-gray-600">hello@integrate-tech.co.uk</p>
           </div>
         </div>
 
