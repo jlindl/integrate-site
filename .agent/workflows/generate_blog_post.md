@@ -26,6 +26,7 @@ description: How to generate a new blog post
 4.  **Update Listing**:
     *   Add the new post object to the `posts` array in `app/ai-and-automation-blog/page.tsx`.
     *   Include the path to the generated image.
+    *   **NOTE**: The sitemap at `app/sitemap.ts` will need to be manually updated with the new slug until we hook up a database, but for now, just add the slug to the `blogPosts` array in `app/sitemap.ts`.
 
 5.  **Verify**:
     *   Navigate to the new page to ensure it loads correctly.
