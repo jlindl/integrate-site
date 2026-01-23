@@ -24,7 +24,7 @@ export default function Footer() {
                 <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">Home</Link>
               </li>
               <li>
-                <Link href="/solutions" className="text-gray-600 hover:text-gray-900 transition-colors">Solutions</Link>
+                <Link href="/automation-services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</Link>
               </li>
               <li>
                 <Link href="/how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it works</Link>
@@ -57,19 +57,19 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <a href="https://www.linkedin.com/company/integrate-tech" aria-label="LinkedIn" target="_blank" rel="noreferrer" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.94 8.5H3.75V20.25H6.94V8.5Z" fill="#111827"/>
-                  <path d="M5.34 3.75C4.32 3.75 3.5 4.57 3.5 5.59C3.5 6.61 4.32 7.43 5.34 7.43C6.36 7.43 7.18 6.61 7.18 5.59C7.18 4.57 6.36 3.75 5.34 3.75Z" fill="#111827"/>
-                  <path d="M20.25 20.25H17.06V14C17.06 12.62 17.03 10.86 15.15 10.86C13.25 10.86 12.96 12.35 12.96 13.91V20.25H9.77V8.5H12.83V9.99H12.87C13.29 9.2 14.31 8.37 15.88 8.37C19.17 8.37 20.25 10.53 20.25 13.42V20.25Z" fill="#111827"/>
+                  <path d="M6.94 8.5H3.75V20.25H6.94V8.5Z" fill="#111827" />
+                  <path d="M5.34 3.75C4.32 3.75 3.5 4.57 3.5 5.59C3.5 6.61 4.32 7.43 5.34 7.43C6.36 7.43 7.18 6.61 7.18 5.59C7.18 4.57 6.36 3.75 5.34 3.75Z" fill="#111827" />
+                  <path d="M20.25 20.25H17.06V14C17.06 12.62 17.03 10.86 15.15 10.86C13.25 10.86 12.96 12.35 12.96 13.91V20.25H9.77V8.5H12.83V9.99H12.87C13.29 9.2 14.31 8.37 15.88 8.37C19.17 8.37 20.25 10.53 20.25 13.42V20.25Z" fill="#111827" />
                 </svg>
               </a>
               <a href="https://twitter.com" aria-label="X (Twitter)" target="_blank" rel="noreferrer" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.244 3.75H21L14.68 10.98L22 20.25H16.52L12.055 14.54L6.96 20.25H3.2L9.92 12.59L3 3.75H8.64L12.645 8.94L18.244 3.75ZM17.292 18.6H18.8L7.8 5.31H6.18L17.292 18.6Z" fill="#111827"/>
+                  <path d="M18.244 3.75H21L14.68 10.98L22 20.25H16.52L12.055 14.54L6.96 20.25H3.2L9.92 12.59L3 3.75H8.64L12.645 8.94L18.244 3.75ZM17.292 18.6H18.8L7.8 5.31H6.18L17.292 18.6Z" fill="#111827" />
                 </svg>
               </a>
               <a href="mailto:hello@apexautomations.com" aria-label="Email" className="p-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 6.75H20C20.69 6.75 21.25 7.31 21.25 8V16C21.25 16.69 20.69 17.25 20 17.25H4C3.31 17.25 2.75 16.69 2.75 16V8C2.75 7.31 3.31 6.75 4 6.75ZM20 8L12 12.75L4 8V8" stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M4 6.75H20C20.69 6.75 21.25 7.31 21.25 8V16C21.25 16.69 20.69 17.25 20 17.25H4C3.31 17.25 2.75 16.69 2.75 16V8C2.75 7.31 3.31 6.75 4 6.75ZM20 8L12 12.75L4 8V8" stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
             </div>

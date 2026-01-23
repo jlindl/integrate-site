@@ -4,9 +4,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Header from "../components/Header";
-import { 
-  HelpCircle, 
-  Layers, 
+import {
+  HelpCircle,
+  Layers,
   ArrowRight,
   BarChart3,
   Lightbulb,
@@ -57,8 +57,8 @@ export default function ResourcesPage() {
     },
   ];
 
-  const filteredResources = activeFilter === "all" 
-    ? resources 
+  const filteredResources = activeFilter === "all"
+    ? resources
     : resources.filter(r => r.category === activeFilter);
 
   // Metallic silver gradient style
@@ -71,12 +71,12 @@ export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 overflow-hidden">
         {/* Background Elements - Silver/Gray theme */}
         <div className="absolute inset-0 bg-linear-to-b from-gray-100 via-gray-50 to-white" />
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.4 }}
           transition={{ duration: 1.5 }}
@@ -85,7 +85,7 @@ export default function ResourcesPage() {
             background: 'radial-gradient(circle, rgba(200,200,200,0.5) 0%, rgba(240,240,240,0.3) 50%, transparent 70%)'
           }}
         />
-        
+
         {/* Animated shine lines */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
@@ -101,7 +101,7 @@ export default function ResourcesPage() {
             className="absolute top-1/3 left-0 w-1/2 h-px bg-linear-to-r from-transparent via-gray-300 to-transparent"
           />
         </div>
-        
+
         <div className="relative max-w-6xl mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -119,7 +119,7 @@ export default function ResourcesPage() {
             >
               {/* Shine sweep effect */}
               <span className="absolute inset-0 rounded-full overflow-hidden">
-                <motion.span 
+                <motion.span
                   initial={{ x: '-100%' }}
                   animate={{ x: '200%' }}
                   transition={{ duration: 2, repeat: Infinity, repeatDelay: 4 }}
@@ -146,7 +146,7 @@ export default function ResourcesPage() {
                   master AI automation
                 </span>
                 {/* Underline accent */}
-                <motion.span 
+                <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
@@ -161,7 +161,7 @@ export default function ResourcesPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg text-gray-600 max-w-2xl mx-auto mb-12"
             >
-              Explore case studies, guides, templates, and data-driven insights to help you 
+              Explore case studies, guides, templates, and data-driven insights to help you
               transform your business with intelligent automation.
             </motion.p>
 
@@ -178,8 +178,8 @@ export default function ResourcesPage() {
                 { icon: Plug, label: "Integrations", value: "100+" },
                 { icon: FileDown, label: "Downloads", value: "20+" },
               ].map((stat, index) => (
-                <motion.div 
-                  key={index} 
+                <motion.div
+                  key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
@@ -191,7 +191,7 @@ export default function ResourcesPage() {
                     border: '1px solid rgba(255,255,255,0.5)'
                   }}
                 >
-                  <div 
+                  <div
                     className="p-2 rounded-xl"
                     style={{
                       background: 'linear-gradient(135deg, #e0e0e0 0%, #c8c8c8 100%)',
@@ -229,11 +229,10 @@ export default function ResourcesPage() {
                 transition={{ duration: 0.3, delay: 0.6 + index * 0.05 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className={`relative px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 overflow-hidden ${
-                  activeFilter === filter.id
+                className={`relative px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 overflow-hidden ${activeFilter === filter.id
                     ? "text-white"
                     : "text-gray-600 hover:text-gray-900"
-                }`}
+                  }`}
                 style={activeFilter !== filter.id ? {
                   background: 'linear-gradient(145deg, #f8f8f8 0%, #e8e8e8 100%)',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.08), inset 0 1px 2px rgba(255,255,255,0.8)',
@@ -285,17 +284,17 @@ export default function ResourcesPage() {
                     }}
                   >
                     {/* Metallic Top Border */}
-                    <div 
+                    <div
                       className="h-1.5"
                       style={{
                         background: 'linear-gradient(90deg, #d0d0d0 0%, #f0f0f0 25%, #a0a0a0 50%, #e0e0e0 75%, #c0c0c0 100%)'
                       }}
                     />
-                    
+
                     <div className="p-6">
                       {/* Icon & Badge Row */}
                       <div className="flex items-start justify-between mb-5">
-                        <motion.div 
+                        <motion.div
                           whileHover={{ rotate: [0, -10, 10, 0] }}
                           transition={{ duration: 0.5 }}
                           className="p-3 rounded-xl"
@@ -306,7 +305,7 @@ export default function ResourcesPage() {
                         >
                           <Icon className="w-6 h-6 text-gray-700" />
                         </motion.div>
-                        <span 
+                        <span
                           className="text-xs font-semibold text-gray-600 px-3 py-1.5 rounded-full"
                           style={{
                             background: 'linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%)',
@@ -328,14 +327,14 @@ export default function ResourcesPage() {
                       {/* Sample Items */}
                       <div className="space-y-2.5 mb-6">
                         {resource.items.map((item, i) => (
-                          <motion.div 
-                            key={i} 
+                          <motion.div
+                            key={i}
                             initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.3, delay: 0.5 + i * 0.1 }}
                             className="flex items-start gap-3"
                           >
-                            <div 
+                            <div
                               className="w-2 h-2 rounded-full mt-1.5 shrink-0"
                               style={{
                                 background: 'linear-gradient(135deg, #a0a0a0 0%, #808080 100%)',
@@ -360,7 +359,7 @@ export default function ResourcesPage() {
                     </div>
 
                     {/* Hover Glow Effect */}
-                    <motion.div 
+                    <motion.div
                       initial={{ opacity: 0 }}
                       whileHover={{ opacity: 0.03 }}
                       className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-300"
@@ -376,7 +375,7 @@ export default function ResourcesPage() {
       {/* CTA Section - Metallic theme */}
       <section className="py-20 md:py-28 relative overflow-hidden">
         {/* Background */}
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 50%, #e8e8e8 100%)'
@@ -391,7 +390,7 @@ export default function ResourcesPage() {
             background: 'radial-gradient(circle, rgba(180,180,180,0.4) 0%, transparent 60%)'
           }}
         />
-        
+
         <div className="relative max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -399,7 +398,7 @@ export default function ResourcesPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -408,7 +407,7 @@ export default function ResourcesPage() {
             >
               Ready to see it in action?
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -417,7 +416,7 @@ export default function ResourcesPage() {
             >
               Get a personalized demo and see how AI automation can transform your business operations.
             </motion.p>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -434,7 +433,7 @@ export default function ResourcesPage() {
                   <span className="relative">Book a Free Demo</span>
                 </motion.button>
               </Link>
-              <Link href="/industries">
+              <Link href="/industry-automation">
                 <motion.button
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}

@@ -50,9 +50,11 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-600">
-          <a href="/solutions" className="hover:text-black transition-colors duration-200">Solutions</a>
+          <a href="/automation-services" className="hover:text-black transition-colors duration-200">Services</a>
+          <a href="/industry-automation" className="hover:text-black transition-colors duration-200">Industries</a>
           <a href="/how-it-works" className="hover:text-black transition-colors duration-200">How it works</a>
           <a href="/pricing" className="hover:text-black transition-colors duration-200">Pricing</a>
+          <a href="/ai-and-automation-blog" className="hover:text-black transition-colors duration-200">Blog</a>
           <a href="/about" className="hover:text-black transition-colors duration-200">About</a>
         </nav>
 
@@ -127,9 +129,11 @@ export default function Header() {
           <div className="max-w-6xl mx-auto px-4 py-4">
             <nav className="grid gap-1 text-sm">
               {[
-                { href: "/solutions", label: "Solutions" },
+                { href: "/automation-services", label: "Services" },
+                { href: "/industry-automation", label: "Industries" },
                 { href: "/how-it-works", label: "How it works" },
                 { href: "/pricing", label: "Pricing" },
+                { href: "/ai-and-automation-blog", label: "Blog" },
                 { href: "/about", label: "About" },
               ].map((item) => (
                 <Link

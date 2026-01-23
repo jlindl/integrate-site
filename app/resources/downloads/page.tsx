@@ -406,11 +406,10 @@ export default function DownloadsPage() {
                   transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className={`relative px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
-                    activeCategory === category.id
+                  className={`relative px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${activeCategory === category.id
                       ? "text-white"
                       : "text-zinc-600 hover:text-black"
-                  }`}
+                    }`}
                   style={activeCategory !== category.id ? {
                     background: 'linear-gradient(145deg, #f8f8f8 0%, #e8e8e8 100%)',
                     boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
@@ -731,7 +730,7 @@ export default function DownloadsPage() {
                   Book a Free Consultation
                 </motion.button>
               </Link>
-              <Link href="/solutions">
+              <Link href="/automation-services">
                 <motion.button
                   whileHover={{ scale: 1.02, y: -1 }}
                   whileTap={{ scale: 0.98 }}
