@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Clinics & Private Healthcare | Integrate",
+  title: "Private Practice Automation: AI Booking & Patient Intake | Integrate",
   description:
     "Automate appointment booking, patient data intake, and insurance pre-checks for clinics and private healthcare. CQC compliant, GDPR secure. UK-based support.",
   keywords: [
@@ -44,5 +44,93 @@ export default function HealthcareLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Healthcare Automation",
+              "provider": {
+                "@type": "Organization",
+                "name": "Integrate",
+              },
+              "description": "Automated appointment booking, patient intake, and insurance verification for private clinics.",
+              "areaServed": "UK",
+              "audience": "Clinics & Private Healthcare",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How does smart appointment booking work?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Patients can book 24/7 via an intelligent system that automatically matches them with the right practitioner and handles waitlists."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is patient data intake secure?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our system provides secure, GDPR-compliant digital forms for medical history and consent, protecting sensitive patient data."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can it check insurance coverage?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it automates insurance verification, checking policy details and pre-authorisation before the patient arrives."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is it CQC compliant?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. The platform is built with NHS-grade security and full audit trails to meet CQC and healthcare compliance standards."
+                  }
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              "name": "How to Automate Patient Journeys",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "name": "Patient Enquires",
+                  "text": "Patient visits booking page to request an appointment."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "AI Books",
+                  "text": "System schedules appointment with the correct practitioner."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Data Collected",
+                  "text": "Intake forms and medical history are completed digitally."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Insurance Verified",
+                  "text": "Coverage is confirmed automatically before arrival."
+                }
+              ]
+            }
+          ]),
+        }}
+      />
+      {children}
+    </>
+  );
 }

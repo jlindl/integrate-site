@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Law Firms & Solicitors | Integrate",
+  title: "Law Firm Automation Consultants | Automate Client Intake | Integrate",
   description:
     "Automate case intake, claims data collection, and evidence upload flows for your law firm. SRA compliant, GDPR secure. UK-based support for legal practices.",
   keywords: [

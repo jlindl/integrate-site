@@ -75,13 +75,26 @@ export default function RootLayout({
               "name": "Integrate",
               "url": "https://integrate.co.uk",
               "logo": "https://integrate.co.uk/icon.png",
+              "areaServed": {
+                "@type": "Country",
+                "name": "United Kingdom"
+              },
+              "knowsAbout": [
+                "Artificial Intelligence",
+                "Process Automation",
+                "Make.com",
+                "n8n",
+                "OpenAI",
+                "CRM Integration"
+              ],
               "sameAs": [
                 "https://www.linkedin.com/company/integrate-tech"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "email": "hello@integrate.co.uk",
-                "contactType": "customer service"
+                "contactType": "customer service",
+                "areaServed": "GB"
               }
             }),
           }}

@@ -100,7 +100,7 @@ export default function TechStack() {
 
         {/* HEADER */}
         <div className="flex flex-col gap-6 mb-16 text-center max-w-3xl mx-auto">
-          
+
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,13 +133,13 @@ export default function TechStack() {
             />
 
             <p className="text-base md:text-lg text-gray-600 mt-6 leading-relaxed">
-              We don&apos;t reinvent the wheel. We combine the best AI, voice, and data tools 
-              into powerful automations that actually work, no proprietary lock-in, just proven technology.
+              We don&apos;t just connect APIs. We are expert developers in Make.com, n8n, and Python.
+              We build robust, enterprise-grade automations that scale with your business.
             </p>
           </motion.div>
 
           <p className="text-xs text-gray-500 uppercase tracking-[0.2em] mt-2">
-            AI · Voice · Data · Outreach · Development
+            Certified Experts: Make.com · n8n · OpenAI · Vapi · Supabase
           </p>
         </div>
 
@@ -189,7 +189,7 @@ export default function TechStack() {
             >
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-blue-50/40 via-transparent to-purple-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              
+
               {/* Logo */}
               <div className="relative w-16 h-16 shrink-0 rounded-xl border border-gray-200/50 bg-white overflow-hidden z-10 shadow-sm group-hover:shadow-md transition-shadow duration-300 flex items-center justify-center">
                 <Image
@@ -218,7 +218,7 @@ export default function TechStack() {
             </motion.div>
           ))}
         </motion.div>
-        
+
         {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -228,7 +228,7 @@ export default function TechStack() {
           className="text-center"
         >
           <p className="text-sm md:text-base text-gray-600 mb-5 max-w-2xl mx-auto">
-            Want to see how these tools work together in your business? 
+            Want to see how these tools work together in your business?
             We&apos;ll show you a custom demo with your exact use case.
           </p>
           <motion.a

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Construction & Trades | Integrate",
+  title: "Construction Admin Software & Trade Business Automation UK | Integrate",
   description:
     "Automate quote intake, job scheduling, H&S documentation, and renewal reminders for builders, plumbers, electricians, and contractors. UK-based support.",
   keywords: [

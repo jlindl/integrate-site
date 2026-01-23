@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Hospitality & Events | Integrate",
+  title: "Hospitality Booking System & Event Management Automation | Integrate",
   description:
     "Automate booking handling, payments, staffing coordination, and review requests for restaurants, hotels, and event venues. PCI compliant. UK-based support.",
   keywords: [
@@ -44,5 +44,93 @@ export default function HospitalityEventsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Hospitality Automation",
+              "provider": {
+                "@type": "Organization",
+                "name": "Integrate",
+              },
+              "description": "Automated booking handling, payments, and staff coordination for hospitality businesses.",
+              "areaServed": "UK",
+              "audience": "Hospitality & Events",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How does booking automation work?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It captures reservations and enquiries 24/7, checking real-time availability and handling confirmations automatically."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can it process payments?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it securely collects deposits, handles split billing, and automates invoicing for corporate events."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does it manage staff shifts?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it streamlines scheduling, collects availability, and manages shift swaps automatically with SMS confirmations."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does it improve reviews?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It sends perfectly timed post-visit review requests, filtering for sentiment and directing happy guests to top review sites."
+                  }
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              "name": "How to Automate Hospitality Operations",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "name": "Enquiry Received",
+                  "text": "Guest makes a booking request."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "AI Confirms",
+                  "text": "Availability checked and booking confirmed instantly."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Payment Collected",
+                  "text": "Deposits are secured automatically."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "Review Requested",
+                  "text": "Post-visit follow-up triggers feedback collection."
+                }
+              ]
+            }
+          ]),
+        }}
+      />
+      {children}
+    </>
+  );
 }

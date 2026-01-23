@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Ecommerce & Retail | Integrate",
+  title: "Ecommerce AI Customer Service & Support Automation | Integrate",
   description:
     "Automate AI live chat, support deflection, abandoned cart recovery, and upsell flows for your online store. Reduce support costs by 70%. UK-based support.",
   keywords: [
