@@ -20,6 +20,8 @@ import {
   Target,
 } from "lucide-react";
 import Header from "@/app/components/Header";
+import SmartBreadcrumb from "@/app/components/SmartBreadcrumb";
+import RelatedIndustries from "@/app/components/RelatedIndustries";
 
 /* ---------- animation variants ---------- */
 const fadeInUp: Variants = {
@@ -266,14 +268,10 @@ export default function RecruitmentAgenciesPage() {
             className="max-w-3xl"
           >
             {/* Breadcrumb */}
-            <motion.div variants={fadeInUp} className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-              <Link href="/industry-automation" className="hover:text-gray-900 transition-colors">Industries</Link>
-              <motion.span
-                animate={{ opacity: [1, 0.5, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >/</motion.span>
-              <span className="text-gray-900">Recruitment Agencies</span>
-            </motion.div>
+            <SmartBreadcrumb
+              parent={{ label: "Industries", href: "/industry-automation" }}
+              current="Recruitment Agencies"
+            />
 
             {/* Badge */}
             <motion.div
@@ -873,6 +871,7 @@ export default function RecruitmentAgenciesPage() {
           </motion.div>
         </div>
       </section>
+      <RelatedIndustries currentPath="/industry-automation/recruitment-automation" />
     </div>
   );
 }

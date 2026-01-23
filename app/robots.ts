@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://integrate.co.uk/sitemap.xml',
+        sitemap: 'https://integrate-tech.co.uk/sitemap.xml',
     }
 }

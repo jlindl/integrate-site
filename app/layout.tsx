@@ -80,10 +80,36 @@ export default function RootLayout({
               ],
               "url": "https://integrate-tech.co.uk",
               "logo": "https://integrate-tech.co.uk/icon.png",
-              "areaServed": {
-                "@type": "Country",
-                "name": "United Kingdom"
-              },
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "United Kingdom"
+                },
+                {
+                  "@type": "City",
+                  "name": "London"
+                },
+                {
+                  "@type": "City",
+                  "name": "Manchester"
+                },
+                {
+                  "@type": "City",
+                  "name": "Birmingham"
+                },
+                {
+                  "@type": "City",
+                  "name": "Leeds"
+                },
+                {
+                  "@type": "City",
+                  "name": "Bristol"
+                },
+                {
+                  "@type": "City",
+                  "name": "Glasgow"
+                }
+              ],
               "knowsAbout": [
                 "Artificial Intelligence",
                 "Process Automation",

@@ -16,6 +16,8 @@ import {
   Zap
 } from "lucide-react";
 import Header from "../../components/Header";
+import SmartBreadcrumb from "@/app/components/SmartBreadcrumb";
+import RelatedIndustries from "@/app/components/RelatedIndustries";
 
 /* ---------- SEO metadata is handled in layout or via generateMetadata ---------- */
 
@@ -242,14 +244,10 @@ export default function MortgageBrokersPage() {
             className="max-w-3xl"
           >
             {/* Breadcrumb */}
-            <motion.div variants={fadeInUp} className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-              <Link href="/industry-automation" className="hover:text-gray-900 transition-colors">Industries</Link>
-              <motion.span
-                animate={{ opacity: [1, 0.5, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >/</motion.span>
-              <span className="text-gray-900">Mortgage Brokers</span>
-            </motion.div>
+            <SmartBreadcrumb
+              parent={{ label: "Industries", href: "/industry-automation" }}
+              current="Mortgage Brokers"
+            />
 
             {/* Badge */}
             <motion.div
@@ -724,6 +722,7 @@ export default function MortgageBrokersPage() {
           </motion.div>
         </div>
       </section>
+      <RelatedIndustries currentPath="/industry-automation/mortgage-automation" />
     </div>
   );
 }

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Header from "../../components/Header";
 import BlogCTA from "../../components/BlogCTA";
+import SmartBreadcrumb from "@/app/components/SmartBreadcrumb";
+import RelatedIndustries from "@/app/components/RelatedIndustries";
 
 export default function EcommerceAutomationPage() {
     return (
@@ -19,6 +21,12 @@ export default function EcommerceAutomationPage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                     >
+                        <div className="mb-6">
+                            <SmartBreadcrumb
+                                parent={{ label: "Industries", href: "/industry-automation" }}
+                                current="Ecommerce & Retail"
+                            />
+                        </div>
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-900 text-xs font-bold tracking-wide uppercase border border-gray-200 mb-6">
                             Industry Solution
                         </div>
@@ -95,6 +103,7 @@ export default function EcommerceAutomationPage() {
             <section className="px-6">
                 <BlogCTA />
             </section>
+            <RelatedIndustries currentPath="/industry-automation/ecommerce-automation" />
         </div>
     );
 }

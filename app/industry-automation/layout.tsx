@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         description:
             "Tailored AI automation workflows for Lending, Financial Services, Real Estate, Law, Recruitment, and more.",
         type: "website",
-        url: "https://integrate.co.uk/industry-automation",
+        url: "https://integrate-tech.co.uk/industry-automation",
     },
 };
 
