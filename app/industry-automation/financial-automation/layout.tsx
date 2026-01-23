@@ -44,5 +44,26 @@ export default function FinancialAdvisorsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Financial Automation",
+            "provider": {
+              "@type": "Organization",
+              "name": "Integrate",
+            },
+            "description": "Automated KYC, digital fact finders, and appointment setting for financial advisors.",
+            "areaServed": "UK",
+            "audience": "Financial Advisors & Wealth Managers",
+          }),
+        }}
+      />
+      {children}
+    </>
+  );
 }

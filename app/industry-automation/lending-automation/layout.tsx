@@ -44,5 +44,26 @@ export default function CreditLendingLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Lending Automation",
+            "provider": {
+              "@type": "Organization",
+              "name": "Integrate",
+            },
+            "description": "Automated loan applications, document collation, risk pre-screening, and payment follow-ups.",
+            "areaServed": "UK",
+            "audience": "Credit & Lending Firms",
+          }),
+        }}
+      />
+      {children}
+    </>
+  );
 }

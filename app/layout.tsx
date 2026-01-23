@@ -15,8 +15,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Integrate",
-  description: "Integrations, automations, and AI workflows",
+  metadataBase: new URL("https://integrate.co.uk"),
+  title: {
+    default: "Integrate | AI Automation & Workflows",
+    template: "%s | Integrate",
+  },
+  description: "Integrations, automations, and AI workflows. Automating voice, email and CRM so your team focuses on growth.",
+  keywords: ["AI automation", "workflow automation", "business integration", "lending automation", "voice agents", "CRM automation"],
+  openGraph: {
+    title: "Integrate | AI Automation & Workflows",
+    description: "Integrations, automations, and AI workflows. Automating voice, email and CRM so your team focuses on growth.",
+    url: "https://integrate.co.uk",
+    siteName: "Integrate",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Integrate | AI Automation & Workflows",
+    description: "Integrations, automations, and AI workflows. Automating voice, email and CRM so your team focuses on growth.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     // Primary favicon (PNG). Browsers may still request /favicon.ico; optional to add later.
     icon: "/favicon.png",
@@ -44,6 +66,26 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Integrate",
+              "url": "https://integrate.co.uk",
+              "logo": "https://integrate.co.uk/icon.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/integrate-tech"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "hello@integrate.co.uk",
+                "contactType": "customer service"
+              }
+            }),
+          }}
+        />
       </body>
     </html>
   );
