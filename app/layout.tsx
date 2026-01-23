@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://integrate.co.uk"),
   title: {
-    default: "Integrate | AI Automation & Workflows",
-    template: "%s | Integrate",
+    default: "Integrate | AI Automation Agency & Specialists",
+    template: "%s | Integrate AI Agency",
   },
   description: "Integrations, automations, and AI workflows. Automating voice, email and CRM so your team focuses on growth.",
   keywords: ["AI automation", "workflow automation", "business integration", "lending automation", "voice agents", "CRM automation"],
@@ -73,6 +73,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Integrate",
+              "alternateName": [
+                "Integrate Automation Agency",
+                "Integrate AI Systems",
+                "Integrate Agency UK"
+              ],
               "url": "https://integrate.co.uk",
               "logo": "https://integrate.co.uk/icon.png",
               "areaServed": {

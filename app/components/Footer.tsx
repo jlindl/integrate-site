@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <div className="text-lg font-semibold text-gray-900">Integrate</div>
             <p className="mt-3 text-sm text-gray-600">
-              Automating voice, email and CRM so your team focuses on growth.
+              UK&apos;s leading AI Automation Agency. Automating voice, email and CRM so your team focuses on growth.
             </p>
           </div>
 
