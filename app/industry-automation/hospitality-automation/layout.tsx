@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate booking handling, payments, staffing coordination, and review requests. Elevate guest experience for restaurants, hotels, and event venues.",
   },
   alternates: {
-    canonical: "https://apexautomations.co.uk/industry-automation/hospitality-automation",
+    canonical: "https://integrate.co.uk/industry-automation/hospitality-automation",
   },
 };
 

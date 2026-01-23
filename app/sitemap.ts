@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://apexautomations.com';
+    const baseUrl = 'https://integrate.co.uk';
 
     // Static pages
     const routes = [

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate AI live chat, support deflection, abandoned cart recovery, and upsell flows. Reduce support costs by 70% with your AI receptionist.",
   },
   alternates: {
-    canonical: "https://apexautomations.co.uk/industry-automation/retail-automation",
+    canonical: "https://integrate.co.uk/industry-automation/retail-automation",
   },
 };
 

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate appointment booking, patient data intake, and insurance pre-checks. CQC compliant automation for clinics and private healthcare.",
   },
   alternates: {
-    canonical: "https://apexautomations.co.uk/industry-automation/healthcare-automation",
+    canonical: "https://integrate.co.uk/industry-automation/healthcare-automation",
   },
 };
 

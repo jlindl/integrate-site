@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate loan applications, document collation, risk pre-screening, and payment follow-ups. FCA compliant workflows built for UK lenders.",
   },
   alternates: {
-    canonical: "https://apexautomations.co.uk/industry-automation/lending-automation",
+    canonical: "https://integrate.co.uk/industry-automation/lending-automation",
   },
 };
 

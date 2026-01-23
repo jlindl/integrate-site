@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://apexautomations.co.uk/industry-automation/mortgage-automation",
+    canonical: "https://integrate.co.uk/industry-automation/mortgage-automation",
   },
 };
 
