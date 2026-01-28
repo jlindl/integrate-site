@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate lead capture, KYC workflows, fact finders, and appointment setting. FCA compliant automation for IFAs and wealth managers.",
   },
   alternates: {
-    canonical: "https://integrate-tech.co.uk/industry-automation/financial-automation",
+    canonical: "https://www.integrate-tech.co.uk/industry-automation/financial-automation",
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         type: "website",
     },
     alternates: {
-        canonical: "https://integrate-tech.co.uk/industry-automation/web-design-automation",
+        canonical: "https://www.integrate-tech.co.uk/industry-automation/web-design-automation",
     },
 };
 

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate quote intake, job scheduling, H&S documentation, and renewal reminders. Cut admin time by 15+ hours per week.",
   },
   alternates: {
-    canonical: "https://integrate-tech.co.uk/industry-automation/construction-automation",
+    canonical: "https://www.integrate-tech.co.uk/industry-automation/construction-automation",
   },
 };
 

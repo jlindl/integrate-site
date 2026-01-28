@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Automate quote intake, job scheduling, CRM pipeline, and review collection. Scale your cleaning business without adding staff.",
   },
   alternates: {
-    canonical: "https://integrate-tech.co.uk/industry-automation/cleaning-business-automation",
+    canonical: "https://www.integrate-tech.co.uk/industry-automation/cleaning-business-automation",
   },
 };
 

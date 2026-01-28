@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Automate loan applications, document collation, risk pre-screening, and payment follow-ups. FCA compliant workflows built for UK lenders.",
   },
   alternates: {
-    canonical: "https://integrate-tech.co.uk/industry-automation/lending-automation",
+    canonical: "https://www.integrate-tech.co.uk/industry-automation/lending-automation",
   },
 };
 

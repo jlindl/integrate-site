@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Automate candidate sourcing, CV parsing, interview scheduling, and outreach. Place more candidates with less admin.",
   },
   alternates: {
-    canonical: "https://integrate-tech.co.uk/industry-automation/recruitment-automation",
+    canonical: "https://www.integrate-tech.co.uk/industry-automation/recruitment-automation",
   },
 };
 
