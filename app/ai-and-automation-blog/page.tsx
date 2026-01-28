@@ -7,6 +7,24 @@ import Header from "../components/Header";
 export default function BlogListing() {
   const posts = [
     {
+      slug: "lead-generation-autopilot",
+      title: "Lead Generation on Autopilot: Scaling Outreach with AI",
+      excerpt: "The days of manual scraping are over. How autonomous agents can enrich leads and personalize outreach at massive scale.",
+      date: "January 28, 2026",
+      readTime: "5 min read",
+      category: "Automation",
+      image: "/images/blog/lead-generation-autopilot.png",
+    },
+    {
+      slug: "voice-ai-revolution",
+      title: "The Voice Revolution: AI Receptionists for 24/7 Service",
+      excerpt: "Why modern businesses are replacing call centers with intelligent voice agents that never sleep.",
+      date: "January 28, 2026",
+      readTime: "4 min read",
+      category: "Voice AI",
+      image: "/images/blog/voice-ai-revolution.png",
+    },
+    {
       slug: "future-of-ai-automation-2026",
       title: "The Future of AI Automation: Key Trends for 2026",
       excerpt: "Discover how autonomous agents, generative models, and hyper-automation are reshaping industries in the coming year.",
