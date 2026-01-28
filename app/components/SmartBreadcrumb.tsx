@@ -20,13 +20,13 @@ export default function SmartBreadcrumb({ parent, current }: SmartBreadcrumbProp
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://integrate-tech.co.uk"
+                "item": "https://www.integrate-tech.co.uk"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": parent.label,
-                "item": `https://integrate-tech.co.uk${parent.href}`
+                "item": `https://www.integrate-tech.co.uk${parent.href}`
             },
             {
                 "@type": "ListItem",

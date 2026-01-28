@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../components/Header";
 
 export default function BlogListing() {
@@ -85,10 +86,12 @@ export default function BlogListing() {
               >
                 <Link href={`/ai-and-automation-blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-gray-100">
                   {post.image ? (
-                    <img
+                    <Image
                       src={post.image}
                       alt={post.title}
-                      className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 grayscale-[10%] group-hover:grayscale-0"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105 grayscale-[10%] group-hover:grayscale-0"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-gray-300">

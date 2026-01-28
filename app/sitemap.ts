@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://integrate-tech.co.uk';
+    const baseUrl = 'https://www.integrate-tech.co.uk';
 
     // Static pages
     const routes = [
@@ -10,7 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/automation-services',
         '/industry-automation',
         '/ai-and-automation-blog',
-        '/contact',
+        '/pricing',
+        '/how-it-works',
+        '/resources/faqs',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -22,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const blogPosts = [
         'future-of-ai-automation-2026',
         'ai-agents-vs-chatbots',
+        'voice-ai-revolution',
+        'lead-generation-autopilot',
     ].map((slug) => ({
         url: `${baseUrl}/ai-and-automation-blog/${slug}`,
         lastModified: new Date(),

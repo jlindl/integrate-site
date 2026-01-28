@@ -87,11 +87,11 @@ export default function Page() {
       <TechStack />
       <UseCase />
       <Testimonials />
-      
+
       {/* CONTACT FORM SECTION */}
       <section id="contact-form" className="w-full bg-linear-to-b from-white via-gray-50 to-white py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +114,7 @@ export default function Page() {
             className="bg-white rounded-2xl border border-gray-200 p-8 md:p-10 shadow-sm"
           >
             <form className="space-y-6" onSubmit={handleSubmit}>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

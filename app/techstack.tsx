@@ -133,8 +133,8 @@ export default function TechStack() {
             />
 
             <p className="text-base md:text-lg text-gray-600 mt-6 leading-relaxed">
-              We don&apos;t just connect APIs. We are expert developers in Make.com, n8n, and Python.
-              We build robust, enterprise-grade automations that scale with your business.
+              We don&apos;t just connect APIs. We are your <strong className="text-gray-900 font-semibold">AI Automation Agency</strong>.
+              Our certified Make.com and n8n developers leverage Python to build robust, enterprise-grade workflows that scale with your business.
             </p>
           </motion.div>
 

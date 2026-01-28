@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Header from "../../components/Header";
-import { 
+import {
   Search,
   Plus,
   Minus,
@@ -96,8 +96,8 @@ export default function FAQsPage() {
 
   const filteredFaqs = faqs.filter(faq => {
     const matchesCategory = activeCategory === "all" || faq.category === activeCategory;
-    const matchesSearch = faq.question.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      faq.answer.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -108,15 +108,32 @@ export default function FAQsPage() {
     border: '1px solid rgba(255,255,255,0.7)'
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-linear-to-b from-gray-100 via-gray-50 to-white" />
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.4 }}
           transition={{ duration: 1.5 }}
@@ -125,7 +142,7 @@ export default function FAQsPage() {
             background: 'radial-gradient(circle, rgba(200,200,200,0.5) 0%, rgba(240,240,240,0.3) 50%, transparent 70%)'
           }}
         />
-        
+
         <div className="relative max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -141,7 +158,7 @@ export default function FAQsPage() {
               style={metallicStyle}
             >
               <span className="absolute inset-0 rounded-full overflow-hidden">
-                <motion.span 
+                <motion.span
                   initial={{ x: '-100%' }}
                   animate={{ x: '200%' }}
                   transition={{ duration: 2, repeat: Infinity, repeatDelay: 4 }}
@@ -156,12 +173,12 @@ export default function FAQsPage() {
               Frequently Asked Questions
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-              Everything you need to know about Integrate&apos;s AI automation platform. 
+              Everything you need to know about Integrate&apos;s AI automation platform.
               Can&apos;t find what you&apos;re looking for? Chat with our team.
             </p>
 
             {/* Search Bar */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -185,7 +202,7 @@ export default function FAQsPage() {
       {/* Categories & Questions */}
       <section className="py-12 md:py-20 bg-white min-h-[600px]">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          
+
           {/* Category Tabs */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
             {categories.map((category, index) => (
@@ -197,11 +214,10 @@ export default function FAQsPage() {
                 transition={{ duration: 0.3, delay: 0.3 + index * 0.05 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeCategory === category.id
+                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category.id
                     ? "bg-black text-white shadow-lg"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
+                  }`}
               >
                 {category.label}
               </motion.button>
@@ -225,7 +241,7 @@ export default function FAQsPage() {
                       onClick={() => setOpenQuestion(openQuestion === faq.id ? null : faq.id)}
                       className="w-full text-left p-6 rounded-2xl transition-all duration-300"
                       style={{
-                        background: openQuestion === faq.id 
+                        background: openQuestion === faq.id
                           ? 'linear-gradient(145deg, #ffffff 0%, #f8f8f8 100%)'
                           : 'white',
                         boxShadow: openQuestion === faq.id
@@ -238,20 +254,17 @@ export default function FAQsPage() {
                     >
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex items-center gap-3">
-                          <div 
-                            className={`w-2 h-2 rounded-full mt-1.5 shrink-0 transition-colors duration-300 ${
-                              openQuestion === faq.id ? 'bg-black' : 'bg-gray-300'
-                            }`}
+                          <div
+                            className={`w-2 h-2 rounded-full mt-1.5 shrink-0 transition-colors duration-300 ${openQuestion === faq.id ? 'bg-black' : 'bg-gray-300'
+                              }`}
                           />
-                          <span className={`text-lg font-semibold transition-colors duration-300 ${
-                            openQuestion === faq.id ? 'text-gray-900' : 'text-gray-700 group-hover:text-gray-900'
-                          }`}>
+                          <span className={`text-lg font-semibold transition-colors duration-300 ${openQuestion === faq.id ? 'text-gray-900' : 'text-gray-700 group-hover:text-gray-900'
+                            }`}>
                             {faq.question}
                           </span>
                         </div>
-                        <div className={`shrink-0 transition-transform duration-300 ${
-                          openQuestion === faq.id ? 'rotate-180' : ''
-                        }`}>
+                        <div className={`shrink-0 transition-transform duration-300 ${openQuestion === faq.id ? 'rotate-180' : ''
+                          }`}>
                           {openQuestion === faq.id ? (
                             <Minus className="w-5 h-5 text-gray-900" />
                           ) : (
@@ -259,7 +272,7 @@ export default function FAQsPage() {
                           )}
                         </div>
                       </div>
-                      
+
                       <AnimatePresence>
                         {openQuestion === faq.id && (
                           <motion.div
@@ -279,14 +292,14 @@ export default function FAQsPage() {
                   </motion.div>
                 ))
               ) : (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   className="text-center py-12"
                 >
                   <p className="text-gray-500">No questions found matching your search.</p>
-                  <button 
-                    onClick={() => {setSearchQuery(""); setActiveCategory("all");}}
+                  <button
+                    onClick={() => { setSearchQuery(""); setActiveCategory("all"); }}
                     className="mt-4 text-sm font-semibold text-black hover:underline"
                   >
                     Clear filters
@@ -300,13 +313,13 @@ export default function FAQsPage() {
 
       {/* Contact CTA */}
       <section className="py-20 relative overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 50%, #e8e8e8 100%)'
           }}
         />
-        
+
         <div className="relative max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -317,14 +330,14 @@ export default function FAQsPage() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gray-100 mb-6">
               <MessageCircle className="w-8 h-8 text-gray-700" />
             </div>
-            
+
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Still have questions?
             </h2>
             <p className="text-gray-600 mb-8 max-w-lg mx-auto">
               Can&apos;t find the answer you&apos;re looking for? Our team is here to help you understand how Integrate can work for your business.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/#contact-form">
                 <motion.button
