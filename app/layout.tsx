@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://integrate-tech.co.uk"),
+  metadataBase: new URL("https://www.integrate-tech.co.uk"),
   title: {
     default: "Integrate | AI Automation Agency & Specialists",
     template: "%s | Integrate AI Agency",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Integrate | AI Automation & Workflows",
     description: "Integrations, automations, and AI workflows. Automating voice, email and CRM so your team focuses on growth.",
-    url: "https://integrate-tech.co.uk",
+    url: "https://www.integrate-tech.co.uk",
     siteName: "Integrate",
     locale: "en_GB",
     type: "website",
@@ -78,8 +78,8 @@ export default function RootLayout({
                 "Integrate AI Systems",
                 "Integrate Agency UK"
               ],
-              "url": "https://integrate-tech.co.uk",
-              "logo": "https://integrate-tech.co.uk/icon.png",
+              "url": "https://www.integrate-tech.co.uk",
+              "logo": "https://www.integrate-tech.co.uk/icon.png",
               "areaServed": [
                 {
                   "@type": "Country",

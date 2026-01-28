@@ -1,0 +1,15 @@
+{
+    "redirects": [
+        {
+            "source": "/:path*",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "integrate-tech.co.uk"
+                }
+            ],
+            "destination": "https://www.integrate-tech.co.uk/:path*",
+            "permanent": true
+        }
+    ]
+}
