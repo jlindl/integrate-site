@@ -678,8 +678,8 @@ export default function EstateAgentsPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Property leads expect instant responses. Research shows the first agent to respond
-                is 50% more likely to win the instruction. But most agencies still take hours—or
-                even days—to reply. That&apos;s where automation dominates.
+                is 50% more likely to win the instruction. But most agencies still take hours - or
+                even days - to reply. That&apos;s where automation dominates.
               </p>
               <div className="space-y-4">
                 {[

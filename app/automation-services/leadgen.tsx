@@ -47,7 +47,7 @@ const extractionProcess = [
   {
     step: "01",
     title: "Define Your ICP",
-    description: "Tell us your ideal customer profile — industry, company size, job titles, location, tech stack, or any custom criteria.",
+    description: "Tell us your ideal customer profile - industry, company size, job titles, location, tech stack, or any custom criteria.",
     icon: "🎯",
     details: ["Industry verticals", "Revenue ranges", "Employee count", "Geographic targeting", "Technology signals"],
   },
@@ -68,7 +68,7 @@ const extractionProcess = [
   {
     step: "04",
     title: "Instant Delivery",
-    description: "Clean, enriched leads flow directly into your CRM, outreach tools, or custom webhook — no manual imports ever.",
+    description: "Clean, enriched leads flow directly into your CRM, outreach tools, or custom webhook - no manual imports ever.",
     icon: "🚀",
     details: ["HubSpot / Salesforce sync", "Webhook integration", "Real-time streaming", "Batch scheduling", "Custom field mapping"],
   },
@@ -127,7 +127,7 @@ const faqs = [
   },
   {
     question: "Is this legal?",
-    answer: "Yes. We only extract publicly available business information — the same data anyone could find by manually searching. We follow robots.txt, respect rate limits, and never access password-protected content. For GDPR/CCPA, we provide full compliance documentation.",
+    answer: "Yes. We only extract publicly available business information - the same data anyone could find by manually searching. We follow robots.txt, respect rate limits, and never access password-protected content. For GDPR/CCPA, we provide full compliance documentation.",
   },
   {
     question: "How fresh is the data?",
@@ -135,7 +135,7 @@ const faqs = [
   },
   {
     question: "What if a lead bounces or is invalid?",
-    answer: "Our triple-verification catches 98%+ of bad data before it reaches you. For the rare invalid lead that slips through, we provide credits or replacements — no questions asked.",
+    answer: "Our triple-verification catches 98%+ of bad data before it reaches you. For the rare invalid lead that slips through, we provide credits or replacements - no questions asked.",
   },
   {
     question: "Can you target very specific niches?",
@@ -162,7 +162,7 @@ export default function LeadGen() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(161,161,170,0.2),rgba(255,255,255,0))]" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-zinc-200/40 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-zinc-300/30 rounded-full blur-3xl" />
-        
+
         <div className="relative max-w-6xl mx-auto px-4 md:px-6 pt-20 md:pt-28 pb-20">
           <div className="text-center max-w-4xl mx-auto">
             <motion.div
@@ -193,7 +193,7 @@ export default function LeadGen() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-zinc-600 max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              Our autonomous AI agents scrape, verify, and deliver hyper-targeted leads directly to your CRM — fresher and cheaper than any traditional data vendor.
+              Our autonomous AI agents scrape, verify, and deliver hyper-targeted leads directly to your CRM - fresher and cheaper than any traditional data vendor.
             </motion.p>
 
             <motion.div
@@ -257,11 +257,11 @@ export default function LeadGen() {
             </p>
           </div>
         </div>
-        
+
         <div className="relative">
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-black to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-black to-transparent z-10" />
-          
+
           <motion.div
             animate={{ x: [0, -1200] }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
@@ -327,16 +327,14 @@ export default function LeadGen() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   onClick={() => setActiveStep(i)}
-                  className={`relative cursor-pointer rounded-2xl border p-5 transition-all duration-300 ${
-                    activeStep === i
+                  className={`relative cursor-pointer rounded-2xl border p-5 transition-all duration-300 ${activeStep === i
                       ? "bg-black text-white border-black shadow-xl"
                       : "bg-white border-zinc-200 hover:border-zinc-400 hover:shadow-md"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-2xl ${
-                      activeStep === i ? "bg-white/10" : "bg-zinc-100"
-                    }`}>
+                    <div className={`shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-2xl ${activeStep === i ? "bg-white/10" : "bg-zinc-100"
+                      }`}>
                       {step.icon}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -371,7 +369,7 @@ export default function LeadGen() {
                   {/* Background Decoration */}
                   <div className="absolute top-0 right-0 w-64 h-64 bg-zinc-500/10 rounded-full blur-3xl" />
                   <div className="absolute bottom-0 left-0 w-64 h-64 bg-zinc-400/10 rounded-full blur-3xl" />
-                  
+
                   <div className="relative z-10">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center text-4xl">
@@ -386,7 +384,7 @@ export default function LeadGen() {
                         </h3>
                       </div>
                     </div>
-                    
+
                     <p className="text-zinc-300 mb-8 leading-relaxed">
                       {extractionProcess[activeStep].description}
                     </p>
@@ -420,9 +418,8 @@ export default function LeadGen() {
                   <button
                     key={i}
                     onClick={() => setActiveStep(i)}
-                    className={`h-2 rounded-full transition-all duration-300 ${
-                      i === activeStep ? "w-8 bg-black" : "w-2 bg-zinc-300 hover:bg-zinc-400"
-                    }`}
+                    className={`h-2 rounded-full transition-all duration-300 ${i === activeStep ? "w-8 bg-black" : "w-2 bg-zinc-300 hover:bg-zinc-400"
+                      }`}
                   />
                 ))}
               </div>
@@ -475,14 +472,14 @@ export default function LeadGen() {
               <div className="absolute -top-4 left-6 px-4 py-1 rounded-full bg-zinc-100 border border-zinc-300 text-xs font-medium text-zinc-600">
                 ❌ The Old Way
               </div>
-              
+
               <div className="pt-4">
                 <h3 className="text-xl font-semibold text-black mb-2">Traditional Lead Vendors</h3>
                 <div className="flex items-baseline gap-2 mb-6">
                   <span className="text-4xl font-bold text-black">$2 – $8</span>
                   <span className="text-zinc-500">per lead</span>
                 </div>
-                
+
                 <div className="space-y-3">
                   {pricingComparison[0].issues?.map((issue, i) => (
                     <div key={i} className="flex items-start gap-3">
@@ -508,14 +505,14 @@ export default function LeadGen() {
               <div className="absolute -top-4 left-6 px-4 py-1 rounded-full bg-white text-xs font-medium text-black">
                 ✓ Our AI Engine
               </div>
-              
+
               <div className="pt-4">
                 <h3 className="text-xl font-semibold text-white mb-2">AI-Powered Extraction</h3>
                 <div className="flex items-baseline gap-2 mb-6">
                   <span className="text-4xl font-bold text-white">$0.02 – $0.15</span>
                   <span className="text-zinc-400">per lead</span>
                 </div>
-                
+
                 <div className="space-y-3">
                   {pricingComparison[1].benefits?.map((benefit, i) => (
                     <div key={i} className="flex items-start gap-3">
@@ -596,7 +593,7 @@ export default function LeadGen() {
               transition={{ delay: 0.2 }}
               className="text-lg text-zinc-600 max-w-2xl mx-auto"
             >
-              From outbound sales to competitive intelligence — any team that needs prospect data can benefit
+              From outbound sales to competitive intelligence - any team that needs prospect data can benefit
             </motion.p>
           </div>
 
@@ -611,7 +608,7 @@ export default function LeadGen() {
                 className="group relative rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-zinc-400 transition-all duration-300 overflow-hidden"
               >
                 <div className="pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-br from-zinc-100/50 via-transparent to-zinc-200/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 <div className="relative z-10">
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-12 h-12 rounded-xl bg-zinc-100 group-hover:bg-black flex items-center justify-center text-2xl transition-colors duration-300">
@@ -711,7 +708,7 @@ export default function LeadGen() {
             <span className="inline-flex h-2 w-2 rounded-full bg-white animate-pulse" />
             <span>Start generating leads in under 24 hours</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -721,7 +718,7 @@ export default function LeadGen() {
           >
             Ready to slash your lead costs by 99%?
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -731,7 +728,7 @@ export default function LeadGen() {
           >
             Tell us your ideal customer profile and we&apos;ll show you exactly what data we can extract, how much it costs, and deliver a sample batch within 24 hours.
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -743,7 +740,7 @@ export default function LeadGen() {
               href="/#contact-form"
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 rounded-full bg-white text-black text-sm font-medium hover:bg-zinc-100 transition-all shadow-lg hover:shadow-xl"
+              className="px-8 py-4 rounded-full bg-white text-black text-sm font-medium hover:bg-zinc-100 transition-all shadow-lg hover:shadow-xl"
             >
               Get your custom lead quote
             </motion.a>
@@ -751,12 +748,12 @@ export default function LeadGen() {
               href="/#contact-form"
               whileHover={{ scale: 1.02, y: -1 }}
               whileTap={{ scale: 0.98 }}
-                className="px-8 py-4 rounded-full border border-zinc-600 text-sm font-medium text-white hover:border-zinc-400 hover:bg-zinc-900 transition-all"
+              className="px-8 py-4 rounded-full border border-zinc-600 text-sm font-medium text-white hover:border-zinc-400 hover:bg-zinc-900 transition-all"
             >
               Request a sample batch
             </motion.a>
           </motion.div>
-          
+
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

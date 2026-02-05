@@ -57,7 +57,7 @@ export default function BlogPost() {
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">Beyond "Press 1 for Sales"</h2>
                 <p className="leading-relaxed">
-                    Old IVR systems were clunky mazes. Modern AI voice agents are conversational. They understand natural language, interruptions, and context. You can talk to them just like a human. They can check your calendar, book appointments, answer complex FAQs, and even qualify leads—all in real-time, 24/7.
+                    Old IVR systems were clunky mazes. Modern AI voice agents are conversational. They understand natural language, interruptions, and context. You can talk to them just like a human. They can check your calendar, book appointments, answer complex FAQs, and even qualify leads - all in real-time, 24/7.
                 </p>
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">Zero Missed Calls</h2>

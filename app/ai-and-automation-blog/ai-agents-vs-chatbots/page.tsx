@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Move beyond simple scripts. Understand the fundamental difference between static chatbots and autonomous AI agents that can plan and execute tasks.",
     openGraph: {
         title: "AI Agents vs Chatbots: What’s the Difference?",
-        description: "Agents don't just chat—they work. Learn why 2025 is the year of the Autonomous Agent.",
+        description: "Agents don't just chat - they work. Learn why 2025 is the year of the Autonomous Agent.",
         url: "https://www.integrate-tech.co.uk/ai-and-automation-blog/ai-agents-vs-chatbots",
         images: [{ url: "/images/blog/ai-agents-vs-chatbots.png", width: 1200, height: 600, alt: "AI Agents vs Chatbots" }],
         type: "article",

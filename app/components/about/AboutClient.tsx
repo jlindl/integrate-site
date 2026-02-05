@@ -134,7 +134,7 @@ export default function AboutClient() {
               variants={fadeInUp}
               className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto"
             >
-              Integrate engineers orchestration layers that unify voice, data, human context and AI reasoning—so your operations accelerate while complexity recedes.
+              Integrate engineers orchestration layers that unify voice, data, human context and AI reasoning - so your operations accelerate while complexity recedes.
             </motion.p>
           </motion.div>
         </div>
@@ -176,8 +176,8 @@ export default function AboutClient() {
                 l.alt === "Instantly"
                   ? "h-16 max-w-[240px]"
                   : ["Google", "Vapi", "ElevenLabs"].includes(l.alt)
-                  ? "h-14 max-w-[200px]"
-                  : "h-10 max-w-[150px]";
+                    ? "h-14 max-w-[200px]"
+                    : "h-10 max-w-[150px]";
               return (
                 <div
                   key={l.alt + i}
@@ -249,10 +249,10 @@ export default function AboutClient() {
           </motion.div>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { label: "Ingest", items: ["Voice","Webhooks","Web","CRM"] },
-              { label: "Normalize", items: ["Parsing","Enrichment","Profiles"] },
-              { label: "Reason", items: ["LLM","Rules","Scoring"] },
-              { label: "Act", items: ["Dial","Email","Data","Notify"] },
+              { label: "Ingest", items: ["Voice", "Webhooks", "Web", "CRM"] },
+              { label: "Normalize", items: ["Parsing", "Enrichment", "Profiles"] },
+              { label: "Reason", items: ["LLM", "Rules", "Scoring"] },
+              { label: "Act", items: ["Dial", "Email", "Data", "Notify"] },
             ].map((layer) => (
               <motion.div
                 key={layer.label}
@@ -297,11 +297,11 @@ export default function AboutClient() {
                 <Sparkles className="w-4 h-4 text-gray-600" />
                 <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Our Core Mission</span>
               </motion.div>
-              
+
               <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
                 Purpose & <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-500 via-gray-800 to-gray-500 animate-gradient bg-300%">Promise</span>
               </motion.h2>
-              
+
               <motion.div variants={fadeInUp} className="space-y-8">
                 <div className="relative pl-8 border-l-2 border-gray-200 hover:border-gray-900 transition-colors duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">The Purpose</h3>
@@ -309,7 +309,7 @@ export default function AboutClient() {
                     To dismantle the complexity barrier. We believe advanced automation shouldn&apos;t require an army of engineers. We exist to bridge the gap between your operational ambition and technical reality.
                   </p>
                 </div>
-                
+
                 <div className="relative pl-8 border-l-2 border-gray-200 hover:border-gray-900 transition-colors duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">The Promise</h3>
                   <p className="text-lg text-gray-600 leading-relaxed">
@@ -335,7 +335,7 @@ export default function AboutClient() {
                   transition={{ duration: 4, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
                   className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -skew-x-12"
                 />
-                
+
                 <div className="relative z-10 space-y-8">
                   <div className="flex items-center gap-4 mb-8">
                     <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
@@ -351,7 +351,7 @@ export default function AboutClient() {
                       "24/7 autonomous monitoring",
                       "White-glove implementation support"
                     ].map((item, i) => (
-                      <motion.li 
+                      <motion.li
                         key={i}
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -422,7 +422,7 @@ export default function AboutClient() {
               >
                 {/* Hover effect */}
                 <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-gray-900/0 to-gray-900/0 group-hover:from-gray-900/5 group-hover:to-gray-900/0 transition-all duration-300" />
-                
+
                 <div className="relative z-10">
                   <motion.div
                     whileHover={{ rotate: 5, scale: 1.1 }}
@@ -564,7 +564,7 @@ export default function AboutClient() {
       {/* CTA Section - Premium black */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-black" />
-        
+
         {/* Animated background patterns */}
         <motion.div
           animate={{

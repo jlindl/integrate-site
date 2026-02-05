@@ -74,7 +74,7 @@ const solutions = [
   {
     icon: Calendar,
     title: "Smart Appointment Booking",
-    description: "Let patients book appointments 24/7 through intelligent online scheduling. AI handles availability, practitioner matching, and appointment types—reducing reception workload by 60%.",
+    description: "Let patients book appointments 24/7 through intelligent online scheduling. AI handles availability, practitioner matching, and appointment types - reducing reception workload by 60%.",
     features: [
       "24/7 online booking",
       "Practitioner matching",
@@ -96,7 +96,7 @@ const solutions = [
   {
     icon: CreditCard,
     title: "Insurance Pre-Checks",
-    description: "Automate insurance verification before appointments. Confirm coverage, check policy details, and flag any issues—preventing billing surprises for patients and clinics.",
+    description: "Automate insurance verification before appointments. Confirm coverage, check policy details, and flag any issues - preventing billing surprises for patients and clinics.",
     features: [
       "Coverage verification",
       "Policy detail checks",
@@ -303,7 +303,7 @@ export default function HealthcarePage() {
               variants={fadeInUp}
               className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed"
             >
-              Appointment booking, patient intake, and insurance verification—all
+              Appointment booking, patient intake, and insurance verification - all
               automated. Less admin, better patient experience, more time for care.
             </motion.p>
 
@@ -480,7 +480,7 @@ export default function HealthcarePage() {
               variants={fadeInUp}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              From Enquiry to Care—Seamlessly
+              From Enquiry to Care - Seamlessly
             </motion.h2>
             <motion.p
               variants={fadeInUp}
@@ -670,7 +670,7 @@ export default function HealthcarePage() {
                 High ROI for Healthcare
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Private healthcare providers are surprisingly high spenders on automation—and
+                Private healthcare providers are surprisingly high spenders on automation - and
                 for good reason. The ROI is exceptional when you factor in reduced no-shows,
                 lower admin costs, and improved patient satisfaction scores.
               </p>

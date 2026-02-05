@@ -9,8 +9,8 @@ export default function CustomSolutions() {
 
       {/* HERO SECTION */}
       <main className="max-w-6xl mx-auto px-4 md:px-6 pt-16 md:pt-20 pb-20 md:pb-24">
-        
-        <motion.div 
+
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={{
@@ -25,7 +25,7 @@ export default function CustomSolutions() {
           className="text-center space-y-8 max-w-4xl mx-auto"
         >
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
@@ -36,7 +36,7 @@ export default function CustomSolutions() {
             <span>Built for your business, not a template</span>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -46,25 +46,25 @@ export default function CustomSolutions() {
             Custom automation built exactly how you need it.
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
             }}
             className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed"
           >
-            Every business is different. We don&apos;t do cookie-cutter solutions. Our developers meet with you, 
+            Every business is different. We don&apos;t do cookie-cutter solutions. Our developers meet with you,
             understand your workflow, and build custom automation that fits your exact needs.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
             }}
             className="flex flex-col sm:flex-row gap-4 sm:items-center justify-center pt-4"
           >
-            <motion.a 
+            <motion.a
               href="/#contact-form"
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.98 }}
@@ -72,7 +72,7 @@ export default function CustomSolutions() {
             >
               Book a discovery call
             </motion.a>
-            <motion.a 
+            <motion.a
               href="/#contact-form"
               whileHover={{ scale: 1.02, y: -1 }}
               whileTap={{ scale: 0.98 }}
@@ -89,7 +89,7 @@ export default function CustomSolutions() {
       {/* HOW WE WORK */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               How we build your custom solution
@@ -100,12 +100,12 @@ export default function CustomSolutions() {
           </div>
 
           <div className="space-y-12 max-w-4xl mx-auto">
-            
+
             {[
               {
                 num: "01",
                 title: "Discovery Call",
-                desc: "We meet with your team to understand your current workflow, pain points, and goals. No technical jargon—just honest conversation about what you need.",
+                desc: "We meet with your team to understand your current workflow, pain points, and goals. No technical jargon - just honest conversation about what you need.",
                 duration: "30-45 minutes",
                 icon: "🗣️"
               },
@@ -147,7 +147,7 @@ export default function CustomSolutions() {
                 className="relative"
               >
                 <div className="flex gap-6 items-start">
-                  
+
                   <div className="flex flex-col items-center shrink-0">
                     <div className="w-16 h-16 rounded-2xl bg-black text-white flex items-center justify-center text-xl font-bold shadow-lg">
                       {step.num}
@@ -186,18 +186,18 @@ export default function CustomSolutions() {
       {/* WHAT WE BUILD */}
       <section className="w-full bg-white py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               What we can build for you
             </h2>
             <p className="text-base text-gray-600">
-              If it involves data, workflows, or repetitive tasks—we can automate it.
+              If it involves data, workflows, or repetitive tasks - we can automate it.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             {[
               {
                 icon: "📊",
@@ -261,7 +261,7 @@ export default function CustomSolutions() {
       {/* TECH STACK */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-3.5 py-1.5 text-xs font-medium text-gray-700 mb-4">
               <span>🛠️</span>
@@ -271,12 +271,12 @@ export default function CustomSolutions() {
               The tools we work with
             </h2>
             <p className="text-base text-gray-600">
-              We pick the right tool for your specific use case—not just what we know.
+              We pick the right tool for your specific use case - not just what we know.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
-            
+
             {[
               "n8n", "Vapi", "ElevenLabs", "Instantly", "2Chat",
               "Apollo.io", "Clearbit", "Harmonic", "Supabase", "Retool",
@@ -304,7 +304,7 @@ export default function CustomSolutions() {
       {/* WHY CUSTOM */}
       <section className="w-full bg-white py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               Why custom beats off-the-shelf
@@ -312,7 +312,7 @@ export default function CustomSolutions() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -377,7 +377,7 @@ export default function CustomSolutions() {
       {/* CTA SECTION */}
       <section className="w-full bg-black text-white py-20 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -388,8 +388,8 @@ export default function CustomSolutions() {
               Let&apos;s build something together.
             </h2>
             <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
-              Book a call with our team. We&apos;ll discuss your workflow, show you what&apos;s possible, 
-              and give you a clear timeline and price—no pressure.
+              Book a call with our team. We&apos;ll discuss your workflow, show you what&apos;s possible,
+              and give you a clear timeline and price - no pressure.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

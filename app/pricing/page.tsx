@@ -11,8 +11,8 @@ export default function Pricing() {
 
       {/* HERO SECTION */}
       <section className="max-w-6xl mx-auto px-4 md:px-6 pt-16 md:pt-20 pb-20 md:pb-24">
-        
-        <motion.div 
+
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={{
@@ -27,7 +27,7 @@ export default function Pricing() {
           className="text-center space-y-8 max-w-4xl mx-auto"
         >
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
@@ -38,7 +38,7 @@ export default function Pricing() {
             <span>Transparent, custom pricing for your needs</span>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -48,14 +48,14 @@ export default function Pricing() {
             Pricing tailored to your automation.
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
             }}
             className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed"
           >
-            Every business is different. We don&apos;t believe in one-size-fits-all pricing. 
+            Every business is different. We don&apos;t believe in one-size-fits-all pricing.
             We learn your needs, design the perfect solution, then give you a fixed quote with no surprises.
           </motion.p>
 
@@ -66,7 +66,7 @@ export default function Pricing() {
       {/* HOW PRICING WORKS */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               How we determine pricing
@@ -77,7 +77,7 @@ export default function Pricing() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            
+
             {[
               {
                 icon: "📊",
@@ -137,8 +137,8 @@ export default function Pricing() {
               The bottom line
             </h3>
             <p className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto">
-              Most projects range from <strong className="text-white">£2,000 to £15,000</strong> for initial build. 
-              Simple automations (email sequences, basic integrations) start lower. Complex multi-channel systems 
+              Most projects range from <strong className="text-white">£2,000 to £15,000</strong> for initial build.
+              Simple automations (email sequences, basic integrations) start lower. Complex multi-channel systems
               with AI and custom logic sit higher. We&apos;ll give you an exact quote after understanding your needs.
             </p>
           </motion.div>
@@ -149,7 +149,7 @@ export default function Pricing() {
       {/* WHAT'S INCLUDED */}
       <section className="w-full bg-white py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               What&apos;s always included
@@ -160,11 +160,11 @@ export default function Pricing() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            
+
             {[
               { icon: "✅", title: "Discovery & Planning", desc: "Deep dive into your workflow and pain points" },
               { icon: "✅", title: "Custom Development", desc: "Tailored automation built for your business" },
-              { icon: "✅", title: "Weekly Progress Updates", desc: "Never in the dark—see what we're building" },
+              { icon: "✅", title: "Weekly Progress Updates", desc: "Never in the dark - see what we're building" },
               { icon: "✅", title: "Unlimited Revisions", desc: "Changes during development at no extra cost" },
               { icon: "✅", title: "Full Documentation", desc: "Written guides and video walkthroughs" },
               { icon: "✅", title: "Team Training", desc: "Live sessions to get your team up to speed" },
@@ -199,7 +199,7 @@ export default function Pricing() {
       {/* EXAMPLE PROJECTS */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               Example project pricing
@@ -210,7 +210,7 @@ export default function Pricing() {
           </div>
 
           <div className="space-y-6 max-w-4xl mx-auto">
-            
+
             {[
               {
                 title: "Email Automation Starter",
@@ -285,7 +285,7 @@ export default function Pricing() {
       {/* HOW TO GET YOUR QUOTE */}
       <section className="w-full bg-white py-20 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               How to get your custom quote
@@ -293,7 +293,7 @@ export default function Pricing() {
           </div>
 
           <div className="space-y-8">
-            
+
             {[
               {
                 step: "1",
@@ -355,7 +355,7 @@ export default function Pricing() {
       {/* FAQ */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               Common questions
@@ -363,7 +363,7 @@ export default function Pricing() {
           </div>
 
           <div className="space-y-6">
-            
+
             {[
               {
                 q: "Do you charge hourly or fixed price?",
@@ -415,7 +415,7 @@ export default function Pricing() {
       {/* CTA SECTION */}
       <section className="w-full bg-black text-white py-20 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -678,7 +678,7 @@ export default function RecruitmentAgenciesPage() {
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 The recruitment industry knows it needs to automate. Every day, agencies search for
                 tools to help them source faster, screen smarter, and place more candidates.
-                The question isn&apos;t whether to automate—it&apos;s which partner to trust.
+                The question isn&apos;t whether to automate - it&apos;s which partner to trust.
               </p>
               <div className="space-y-4">
                 {[

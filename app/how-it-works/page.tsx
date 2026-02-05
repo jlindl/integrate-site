@@ -11,8 +11,8 @@ export default function HowItWorks() {
 
       {/* HERO SECTION */}
       <section className="max-w-6xl mx-auto px-4 md:px-6 pt-16 md:pt-20 pb-20 md:pb-24">
-        
-        <motion.div 
+
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={{
@@ -27,7 +27,7 @@ export default function HowItWorks() {
           className="text-center space-y-8 max-w-4xl mx-auto"
         >
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
@@ -38,7 +38,7 @@ export default function HowItWorks() {
             <span>Simple, transparent process</span>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
@@ -48,14 +48,14 @@ export default function HowItWorks() {
             How Integrate works.
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
             }}
             className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed"
           >
-            From first call to deployed automation in 2-4 weeks. No lengthy contracts, no hidden fees, 
+            From first call to deployed automation in 2-4 weeks. No lengthy contracts, no hidden fees,
             just clear steps and honest communication.
           </motion.p>
 
@@ -66,15 +66,15 @@ export default function HowItWorks() {
       {/* MAIN PROCESS STEPS */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="space-y-16">
-            
+
             {[
               {
                 num: "01",
                 title: "Book a Discovery Call",
                 duration: "30 minutes",
-                desc: "We start with a conversation. Tell us about your business, your current workflow, and what's slowing you down. No sales pitch—just listening.",
+                desc: "We start with a conversation. Tell us about your business, your current workflow, and what's slowing you down. No sales pitch - just listening.",
                 details: [
                   "Walk through your current process",
                   "Identify automation opportunities",
@@ -126,7 +126,7 @@ export default function HowItWorks() {
                 num: "05",
                 title: "Ongoing Support (Optional)",
                 duration: "Monthly",
-                desc: "Need changes? Want to add features? We're here. Pay monthly or as-needed—no long-term contracts required.",
+                desc: "Need changes? Want to add features? We're here. Pay monthly or as-needed - no long-term contracts required.",
                 details: [
                   "Priority support when you need it",
                   "Add new features and integrations",
@@ -144,7 +144,7 @@ export default function HowItWorks() {
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
               >
-                
+
                 {/* Left: Number & Title */}
                 <div className="lg:col-span-4">
                   <div className="flex items-start gap-4">
@@ -196,7 +196,7 @@ export default function HowItWorks() {
       {/* WHY THIS APPROACH */}
       <section className="w-full bg-white py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               Why we work this way
@@ -207,7 +207,7 @@ export default function HowItWorks() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -221,7 +221,7 @@ export default function HowItWorks() {
                 No Black Box
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                You see exactly what we&apos;re building every week. No surprises at the end—just steady progress you can track.
+                You see exactly what we&apos;re building every week. No surprises at the end - just steady progress you can track.
               </p>
             </motion.div>
 
@@ -269,7 +269,7 @@ export default function HowItWorks() {
       {/* TIMELINE VISUAL */}
       <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 md:py-24 border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
-          
+
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
               Typical timeline
@@ -281,7 +281,7 @@ export default function HowItWorks() {
 
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 hidden md:block" />
-            
+
             <div className="space-y-8">
               {[
                 { week: "Week 0", title: "Discovery & Proposal", status: "30 min call → Proposal in 2-3 days" },
@@ -319,7 +319,7 @@ export default function HowItWorks() {
       {/* CTA SECTION */}
       <section className="w-full bg-black text-white py-20 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -36,7 +36,7 @@ export default function CallFlow() {
             Inbound call outcomes
           </h3>
           <p className="text-xs text-gray-500 mt-1">
-            Turn every inbound call into a qualified opportunity — even when you’re busy.
+            Turn every inbound call into a qualified opportunity - even when you’re busy.
           </p>
         </div>
         <span className="hidden md:inline-flex text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-600">

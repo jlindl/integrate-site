@@ -62,7 +62,7 @@ export default function BlogPost() {
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">2. Hyper-Personalization at Scale</h2>
                 <p className="leading-relaxed">
-                    Marketing automation is getting a brain transplant. Instead of segmenting users into broad buckets, AI analyses individual behavior in real-time to generate unique copy, images, and offers for every single interaction. This level of granularity was impossible—or at least prohibitively expensive—until now.
+                    Marketing automation is getting a brain transplant. Instead of segmenting users into broad buckets, AI analyses individual behavior in real-time to generate unique copy, images, and offers for every single interaction. This level of granularity was impossible - or at least prohibitively expensive - until now.
                 </p>
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">3. The Rise of "Invisible" Interfaces</h2>

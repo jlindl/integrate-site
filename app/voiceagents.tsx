@@ -176,7 +176,7 @@ const faqs = [
   {
     question: "How does this plug into our tools?",
     answer:
-      "We connect into your existing stack—HubSpot, Salesforce, Pipedrive, Calendly, Stripe, Helpdesks and more—using n8n, Make.com or direct APIs."
+      "We connect into your existing stack - HubSpot, Salesforce, Pipedrive, Calendly, Stripe, Helpdesks and more - using n8n, Make.com or direct APIs."
   },
   {
     question: "Is this suitable for regulated industries?",
@@ -342,11 +342,10 @@ export default function VoiceAgents() {
                       key={i}
                       type="button"
                       onClick={() => setCurrentCardIndex(i)}
-                      className={`h-1.5 rounded-full transition-all duration-300 ${
-                        i === currentCardIndex
+                      className={`h-1.5 rounded-full transition-all duration-300 ${i === currentCardIndex
                           ? "w-7 bg-gray-700"
                           : "w-2 bg-gray-300/80 hover:bg-gray-400"
-                      }`}
+                        }`}
                     />
                   ))}
                 </div>

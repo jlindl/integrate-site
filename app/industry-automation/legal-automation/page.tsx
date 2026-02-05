@@ -95,7 +95,7 @@ const solutions = [
   {
     icon: Upload,
     title: "Evidence Upload Flows",
-    description: "Secure, guided evidence submission for clients. Medical records, photographs, correspondence—all collected systematically with proper categorisation.",
+    description: "Secure, guided evidence submission for clients. Medical records, photographs, correspondence - all collected systematically with proper categorisation.",
     features: [
       "Secure document upload",
       "Automatic categorisation",
@@ -109,7 +109,7 @@ const benefits = [
   {
     icon: Clock,
     title: "After-Hours Intake",
-    description: "Never miss a potential client—capture enquiries 24/7, weekends and holidays."
+    description: "Never miss a potential client - capture enquiries 24/7, weekends and holidays.",
   },
   {
     icon: Shield,

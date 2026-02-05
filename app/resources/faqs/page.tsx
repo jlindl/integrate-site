@@ -90,7 +90,7 @@ export default function FAQsPage() {
       id: 10,
       category: "general",
       question: "Can I customize the voice and personality?",
-      answer: "Yes! You can choose from a library of professional voices (British, American, Australian, etc.) and adjust the tone, pace, and personality traits to match your brand identity—whether that's professional and formal, or friendly and casual."
+      answer: "Yes! You can choose from a library of professional voices (British, American, Australian, etc.) and adjust the tone, pace, and personality traits to match your brand identity - whether that's professional and formal, or friendly and casual."
     }
   ];
 
@@ -215,8 +215,8 @@ export default function FAQsPage() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category.id
-                    ? "bg-black text-white shadow-lg"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-black text-white shadow-lg"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                   }`}
               >
                 {category.label}

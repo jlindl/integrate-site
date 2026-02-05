@@ -74,7 +74,7 @@ const solutions = [
   {
     icon: ClipboardList,
     title: "Quote Intake Automation",
-    description: "Capture job enquiries 24/7 with intelligent quote request forms. Collect project details, site information, and specifications automatically—ready for your estimator.",
+    description: "Capture job enquiries 24/7 with intelligent quote request forms. Collect project details, site information, and specifications automatically - ready for your estimator.",
     features: [
       "24/7 enquiry capture",
       "Project scope collection",
@@ -85,7 +85,7 @@ const solutions = [
   {
     icon: Calendar,
     title: "Smart Job Scheduling",
-    description: "Automate appointment booking and crew scheduling. Clients book available slots, teams get notified, and calendars stay synced—no more back-and-forth calls.",
+    description: "Automate appointment booking and crew scheduling. Clients book available slots, teams get notified, and calendars stay synced - no more back-and-forth calls.",
     features: [
       "Online booking calendar",
       "Crew availability management",
@@ -131,7 +131,7 @@ const benefits = [
   {
     icon: Users,
     title: "Win More Jobs",
-    description: "Respond to enquiries instantly—even from site or after hours."
+    description: "Respond to enquiries instantly - even from site or after hours.",
   },
   {
     icon: Zap,
@@ -306,7 +306,7 @@ export default function ConstructionTradesPage() {
               variants={fadeInUp}
               className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed"
             >
-              Quote intake, job scheduling, H&S documentation, and renewal reminders—all
+              Quote intake, job scheduling, H&S documentation, and renewal reminders - all
               automated. Spend less time on admin, more time on the tools.
             </motion.p>
 
@@ -483,7 +483,7 @@ export default function ConstructionTradesPage() {
               variants={fadeInUp}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              From Enquiry to Invoice—Automated
+              From Enquiry to Invoice - Automated
             </motion.h2>
             <motion.p
               variants={fadeInUp}
@@ -675,13 +675,13 @@ export default function ConstructionTradesPage() {
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Tons of manual paperwork? That&apos;s exactly why automation works so well
                 for construction and trades. Every form, every reminder, every
-                booking—handled automatically while you&apos;re on site getting the job done.
+                booking - handled automatically while you&apos;re on site getting the job done.
               </p>
               <div className="space-y-4">
                 {[
                   "Quote requests captured while you're on the tools",
                   "H&S documentation filed and organised automatically",
-                  "Certification renewals—never miss another deadline",
+                  "Certification renewals - never miss another deadline",
                   "Client communications handled professionally 24/7"
                 ].map((point, index) => (
                   <motion.div

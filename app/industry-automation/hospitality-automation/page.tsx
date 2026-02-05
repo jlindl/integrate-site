@@ -74,7 +74,7 @@ const solutions = [
   {
     icon: Calendar,
     title: "Smart Booking Handling",
-    description: "Automate reservations, event enquiries, and table bookings 24/7. AI handles availability checks, special requests, and confirmations—freeing your team to focus on guests.",
+    description: "Automate reservations, event enquiries, and table bookings 24/7. AI handles availability checks, special requests, and confirmations - freeing your team to focus on guests.",
     features: [
       "24/7 booking capture",
       "Real-time availability",
@@ -306,7 +306,7 @@ export default function HospitalityEventsPage() {
               variants={fadeInUp}
               className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed"
             >
-              Booking handling, payments, staff coordination, and review requests—all
+              Booking handling, payments, staff coordination, and review requests - all
               automated. Deliver exceptional service while reducing operational overhead.
             </motion.p>
 
@@ -674,12 +674,12 @@ export default function HospitalityEventsPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 In hospitality, every minute counts. Automating bookings, payments, and staff
-                coordination frees your team to do what they do best—create memorable experiences
+                coordination frees your team to do what they do best - create memorable experiences
                 for your guests.
               </p>
               <div className="space-y-4">
                 {[
-                  "Never miss a booking—even at 2am on a Saturday",
+                  "Never miss a booking - even at 2am on a Saturday",
                   "Deposits collected automatically, no awkward chasing",
                   "Staff shifts filled and confirmed without phone tag",
                   "Reviews requested at the perfect moment post-visit"

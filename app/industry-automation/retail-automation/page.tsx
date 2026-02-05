@@ -74,7 +74,7 @@ const solutions = [
   {
     icon: Bot,
     title: "AI Live Chat & Virtual Assistant",
-    description: "Deploy an AI-powered chat that handles customer queries 24/7. Answer product questions, process returns, and guide purchases—all without human intervention.",
+    description: "Deploy an AI-powered chat that handles customer queries 24/7. Answer product questions, process returns, and guide purchases - all without human intervention.",
     features: [
       "Natural conversation AI",
       "Product recommendation engine",
@@ -311,7 +311,7 @@ export default function EcommerceRetailPage() {
               className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed"
             >
               Replace support overhead with AI that handles live chat, deflects tickets,
-              recovers abandoned carts, and drives upsells—24/7, without adding headcount.
+              recovers abandoned carts, and drives upsells - 24/7, without adding headcount.
             </motion.p>
 
             {/* CTAs */}
@@ -678,7 +678,7 @@ export default function EcommerceRetailPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Every online shop faces the same challenge: customer support costs eat into margins.
-                Our AI receptionist and email automation systems directly replace that overhead—handling
+                Our AI receptionist and email automation systems directly replace that overhead - handling
                 the repetitive queries while your team focuses on complex issues and growth.
               </p>
               <div className="space-y-4">

@@ -153,9 +153,21 @@ export default function UseCase() {
   const detailTilt = useTilt();
 
   return (
-    <section className="w-full bg-linear-to-b from-gray-50 via-white to-gray-50 py-24 md:py-32 border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        
+    <section className="w-full relative py-24 md:py-32 border-t border-gray-100 overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('/assets/use_case_workflow_bg.png')" }}
+      />
+      {/* Light Overlay for readability */}
+      <div className="absolute inset-0 bg-white/80 z-0" />
+
+      {/* Top & Bottom Fade for seamless transition */}
+      <div className="absolute top-0 inset-x-0 h-32 bg-linear-to-b from-white to-transparent z-10" />
+      <div className="absolute bottom-0 inset-x-0 h-32 bg-linear-to-t from-gray-50 to-transparent z-10" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
+
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -164,22 +176,22 @@ export default function UseCase() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-center mb-20"
         >
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-xs font-medium text-gray-700 mb-6 shadow-lg backdrop-blur-sm"
           >
-            <motion.span 
+            <motion.span
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ repeat: Infinity, duration: 2 }}
               className="inline-flex h-2 w-2 rounded-full bg-blue-500"
             />
             <span>Complete automation workflow</span>
           </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -190,7 +202,7 @@ export default function UseCase() {
               Complete automation workflows
             </span>
           </motion.h2>
-          
+
           <motion.div
             initial={{ width: 0, opacity: 0 }}
             whileInView={{ width: "140px", opacity: 1 }}
@@ -198,25 +210,25 @@ export default function UseCase() {
             viewport={{ once: true }}
             className="h-1 bg-linear-to-r from-transparent via-black to-transparent rounded-full mx-auto mb-6"
           />
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
           >
-            From data scraping to qualification — automated outreach across voice, email, 
+            From data scraping to qualification - automated outreach across voice, email,
             and WhatsApp with full CRM integration
           </motion.p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-8 items-start max-w-6xl mx-auto">
-          
+
           {/* Left Side - Workflow Steps */}
           <div className="relative space-y-5">
             {/* Animated vertical connector line */}
-            <motion.div 
+            <motion.div
               initial={{ height: 0 }}
               whileInView={{ height: "calc(100% - 112px)" }}
               viewport={{ once: true }}
@@ -229,19 +241,19 @@ export default function UseCase() {
                 className="w-1.5 h-8 bg-linear-to-b from-transparent via-blue-500 to-transparent rounded-full absolute -left-0.5 top-0"
               />
             </motion.div>
-            
+
             {workflows.map((workflow, index) => (
               <motion.button
                 key={workflow.id}
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ 
-                  delay: index * 0.15, 
+                transition={{
+                  delay: index * 0.15,
                   duration: 0.6,
                   ease: [0.16, 1, 0.3, 1]
                 }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.03,
                   x: 5,
                   transition: { duration: 0.2 }
@@ -250,7 +262,7 @@ export default function UseCase() {
                 onClick={() => setActiveWorkflow(index)}
                 className="relative z-10 w-full"
               >
-                <motion.div 
+                <motion.div
                   animate={activeWorkflow === index ? {
                     boxShadow: [
                       "0 8px 30px rgba(0,0,0,0.12)",
@@ -259,11 +271,10 @@ export default function UseCase() {
                     ]
                   } : {}}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className={`bg-white rounded-2xl border-2 p-6 transition-all duration-300 text-left overflow-hidden relative ${
-                    activeWorkflow === index
-                      ? 'border-black shadow-[0_8px_30px_rgba(0,0,0,0.12)] scale-[1.02]'
-                      : 'border-gray-200 hover:border-gray-400 hover:shadow-lg'
-                  }`}
+                  className={`bg-white rounded-2xl border-2 p-6 transition-all duration-300 text-left overflow-hidden relative ${activeWorkflow === index
+                    ? 'border-black shadow-[0_8px_30px_rgba(0,0,0,0.12)] scale-[1.02]'
+                    : 'border-gray-200 hover:border-gray-400 hover:shadow-lg'
+                    }`}
                 >
                   {/* Animated gradient overlay for active card */}
                   {activeWorkflow === index && (
@@ -278,7 +289,7 @@ export default function UseCase() {
                     <div className={`${workflow.iconBg} w-[52px] h-[52px] rounded-xl flex items-center justify-center text-white text-2xl shrink-0 shadow-lg`}>
                       {workflow.icon}
                     </div>
-                    
+
                     {/* Content */}
                     <div className="flex-1 min-w-0">
                       <h3 className="text-[15px] font-semibold text-gray-900 mb-1">
@@ -313,9 +324,9 @@ export default function UseCase() {
                       aria-hidden="true"
                     >
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <circle cx="8" cy="3" r="1.5"/>
-                        <circle cx="8" cy="8" r="1.5"/>
-                        <circle cx="8" cy="13" r="1.5"/>
+                        <circle cx="8" cy="3" r="1.5" />
+                        <circle cx="8" cy="8" r="1.5" />
+                        <circle cx="8" cy="13" r="1.5" />
                       </svg>
                     </motion.div>
                   </div>
@@ -329,7 +340,7 @@ export default function UseCase() {
             key={activeWorkflow}
             initial={{ opacity: 0, scale: 0.95, rotateY: -15 }}
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-            transition={{ 
+            transition={{
               duration: 0.6,
               ease: [0.16, 1, 0.3, 1]
             }}
@@ -356,9 +367,9 @@ export default function UseCase() {
                   backgroundSize: "30px 30px",
                 }}
               />
-              
+
               <div className="flex items-start gap-4 mb-4 relative z-10">
-                <motion.div 
+                <motion.div
                   initial={{ scale: 0, rotate: -180 }}
                   animate={{ scale: 1, rotate: 0 }}
                   transition={{ type: "spring", stiffness: 200, damping: 15 }}
@@ -367,7 +378,7 @@ export default function UseCase() {
                   {channelDetails[activeWorkflow].icon}
                 </motion.div>
                 <div className="flex-1">
-                  <motion.p 
+                  <motion.p
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 }}
@@ -375,7 +386,7 @@ export default function UseCase() {
                   >
                     {channelDetails[activeWorkflow].user}
                   </motion.p>
-                  <motion.h3 
+                  <motion.h3
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.15 }}
@@ -383,7 +394,7 @@ export default function UseCase() {
                   >
                     {channelDetails[activeWorkflow].title}
                   </motion.h3>
-                  <motion.p 
+                  <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
@@ -394,14 +405,14 @@ export default function UseCase() {
                 </div>
               </div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25 }}
                 className="flex items-center gap-2 text-sm relative z-10"
               >
                 <span className="text-gray-500 font-medium">Platform:</span>
-                <motion.span 
+                <motion.span
                   whileHover={{ scale: 1.05 }}
                   className="inline-flex items-center px-4 py-1.5 rounded-full bg-linear-to-r from-blue-50 to-blue-100 text-blue-700 font-semibold text-xs border border-blue-200 shadow-sm"
                 >
@@ -418,14 +429,14 @@ export default function UseCase() {
                     key={idx}
                     initial={{ opacity: 0, y: 30, scale: 0.9 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
-                    transition={{ 
-                      delay: idx * 0.1, 
+                    transition={{
+                      delay: idx * 0.1,
                       duration: 0.5,
                       type: "spring",
                       stiffness: 200
                     }}
-                    whileHover={{ 
-                      scale: 1.05, 
+                    whileHover={{
+                      scale: 1.05,
                       y: -5,
                       transition: { duration: 0.2 }
                     }}
@@ -438,7 +449,7 @@ export default function UseCase() {
                       transition={{ duration: 0.6 }}
                       className="absolute inset-0 bg-linear-to-r from-transparent via-white/40 to-transparent pointer-events-none"
                     />
-                    
+
                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-2 font-semibold group-hover:text-gray-700 transition-colors">
                       {stat.label}
                     </p>
@@ -489,7 +500,7 @@ export default function UseCase() {
                 whileHover={{ scale: 1.02 }}
                 className="mt-6 flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-linear-to-r from-green-50 to-emerald-50 border-2 border-green-200 shadow-lg"
               >
-                <motion.span 
+                <motion.span
                   animate={{ scale: [1, 1.3, 1], opacity: [1, 0.7, 1] }}
                   transition={{ repeat: Infinity, duration: 2 }}
                   className="inline-flex h-3 w-3 rounded-full bg-green-500"
@@ -501,7 +512,7 @@ export default function UseCase() {
             </div>
 
             {/* Footer */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9 }}
@@ -509,19 +520,19 @@ export default function UseCase() {
             >
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <span>Powered by</span>
-                <motion.span 
+                <motion.span
                   whileHover={{ scale: 1.05 }}
                   className="font-bold text-gray-900 cursor-pointer"
                 >
                   Integrate
                 </motion.span>
               </div>
-              <motion.button 
+              <motion.button
                 whileHover={{ scale: 1.05, x: 3 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-xs text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1 group"
               >
-                View Details 
+                View Details
                 <motion.span
                   animate={{ x: [0, 4, 0] }}
                   transition={{ repeat: Infinity, duration: 1.5 }}
@@ -542,7 +553,7 @@ export default function UseCase() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-center mt-24"
         >
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -557,8 +568,8 @@ export default function UseCase() {
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-            whileHover={{ 
-              scale: 1.05, 
+            whileHover={{
+              scale: 1.05,
               y: -3,
               boxShadow: "0 20px 40px rgba(0,0,0,0.15)"
             }}

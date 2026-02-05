@@ -11,7 +11,7 @@ type ChatMessage = {
 
 const chatScript: ChatMessage[] = [
   { id: 1, from: "lead", text: "Hi, we keep missing calls from new enquiries. Can you help?", delay: 1600 },
-  { id: 2, from: "agent", text: "Absolutely — I can help with that. Can I check what your business does?", delay: 2200 },
+  { id: 2, from: "agent", text: "Absolutely - I can help with that. Can I check what your business does?", delay: 2200 },
   { id: 3, from: "lead", text: "We’re a commercial cleaning company.", delay: 1800 },
   { id: 4, from: "agent", text: "Got it. And how many calls do you get per day?", delay: 1800 },
   { id: 5, from: "lead", text: "Around 15–25.", delay: 1600 },
@@ -52,11 +52,10 @@ export default function ChatDemo() {
           {chatScript.slice(0, visibleCount).map((msg) => (
             <div key={msg.id} className={`flex ${msg.from === "agent" ? "justify-end" : "justify-start"}`}>
               <div
-                className={`px-3 py-2 rounded-2xl max-w-[80%] leading-relaxed ${
-                  msg.from === "agent"
+                className={`px-3 py-2 rounded-2xl max-w-[80%] leading-relaxed ${msg.from === "agent"
                     ? "bg-black text-white rounded-br-sm"
                     : "bg-white text-gray-900 border border-gray-200 rounded-bl-sm"
-                }`}
+                  }`}
               >
                 {msg.text}
               </div>

@@ -52,7 +52,7 @@ export default function BlogPost() {
                 }
             >
                 <p className="lead text-xl md:text-2xl text-gray-800 leading-relaxed font-medium mb-12">
-                    The days of manual LinkedIn scraping and copy-pasted cold emails are over. Modern sales teams are building <span className="text-black font-semibold">Autonomous Lead Engines</span> that run 24/7—scraping, enriching, and engaging prospects without human input.
+                    The days of manual LinkedIn scraping and copy-pasted cold emails are over. Modern sales teams are building <span className="text-black font-semibold">Autonomous Lead Engines</span> that run 24/7 - scraping, enriching, and engaging prospects without human input.
                 </p>
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">The Data Problem</h2>
@@ -62,7 +62,7 @@ export default function BlogPost() {
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">Enrichment at Scale</h2>
                 <p className="leading-relaxed">
-                    Imagine an agent that doesn't just find an email, but finds the prospect's recent podcast appearance, their company's latest funding round, and their hiring trends. It then synthesizes this into a personalized "hook" for your outreach. This isn't science fiction—it's what we're building for clients today.
+                    Imagine an agent that doesn't just find an email, but finds the prospect's recent podcast appearance, their company's latest funding round, and their hiring trends. It then synthesizes this into a personalized "hook" for your outreach. This isn't science fiction - it's what we're building for clients today.
                 </p>
 
                 <h2 className="text-3xl text-gray-900 mt-16 mb-6">The "Invisible" Outreach</h2>

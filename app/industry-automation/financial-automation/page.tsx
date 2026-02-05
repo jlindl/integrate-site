@@ -74,7 +74,7 @@ const solutions = [
   {
     icon: Users,
     title: "Intelligent Lead Capture",
-    description: "Capture high-net-worth prospects 24/7 with sophisticated intake forms. Qualify leads based on investable assets, goals, and timeline—automatically routing hot prospects to your team.",
+    description: "Capture high-net-worth prospects 24/7 with sophisticated intake forms. Qualify leads based on investable assets, goals, and timeline - automatically routing hot prospects to your team.",
     features: [
       "24/7 prospect capture",
       "Asset-based qualification",
@@ -107,7 +107,7 @@ const solutions = [
   {
     icon: Calendar,
     title: "Smart Appointment Setting",
-    description: "Let prospects book directly into your calendar. AI qualifies and schedules initial consultations, sends reminders, and handles rescheduling—freeing your team for advice.",
+    description: "Let prospects book directly into your calendar. AI qualifies and schedules initial consultations, sends reminders, and handles rescheduling - freeing your team for advice.",
     features: [
       "Self-service booking",
       "Qualification questions",
@@ -121,7 +121,7 @@ const benefits = [
   {
     icon: Clock,
     title: "Capture Leads 24/7",
-    description: "Never miss a high-value prospect—intake runs around the clock."
+    description: "Never miss a high-value prospect - intake runs around the clock."
   },
   {
     icon: Shield,
@@ -131,7 +131,7 @@ const benefits = [
   {
     icon: TrendingUp,
     title: "Higher Conversion",
-    description: "Respond instantly to enquiries—convert more prospects to clients."
+    description: "Respond instantly to enquiries - convert more prospects to clients."
   },
   {
     icon: Zap,
@@ -307,7 +307,7 @@ export default function FinancialAdvisorsPage() {
               variants={fadeInUp}
               className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed"
             >
-              Lead capture, KYC workflows, digital fact finders, and appointment setting—all
+              Lead capture, KYC workflows, digital fact finders, and appointment setting - all
               automated. Spend less time on admin, more time delivering advice.
             </motion.p>
 
@@ -484,7 +484,7 @@ export default function FinancialAdvisorsPage() {
               variants={fadeInUp}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              From Prospect to Client—Automated
+              From Prospect to Client - Automated
             </motion.h2>
             <motion.p
               variants={fadeInUp}

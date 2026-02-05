@@ -85,7 +85,7 @@ const solutions = [
   {
     icon: FileText,
     title: "Document Collation",
-    description: "Automatically request, collect, and organise supporting documents. Bank statements, payslips, ID verification—all gathered without manual chasing.",
+    description: "Automatically request, collect, and organise supporting documents. Bank statements, payslips, ID verification - all gathered without manual chasing.",
     features: [
       "Automated document requests",
       "Secure upload portal",
@@ -689,7 +689,7 @@ export default function CreditLendingPage() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Financial services have some of the most regulated, process-driven workflows
-                in any industry. That&apos;s actually good news—structured processes are exactly
+                in any industry. That&apos;s actually good news - structured processes are exactly
                 what AI agents excel at automating.
               </p>
               <div className="space-y-4">

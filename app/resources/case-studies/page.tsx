@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../../components/Header";
-import { 
+import {
   ArrowRight,
   TrendingUp,
   Clock,
@@ -200,8 +200,8 @@ export default function CaseStudiesPage() {
     },
   ];
 
-  const filteredStudies = activeFilter === "all" 
-    ? caseStudies 
+  const filteredStudies = activeFilter === "all"
+    ? caseStudies
     : caseStudies.filter(s => s.category === activeFilter);
 
   // Metallic style
@@ -214,12 +214,12 @@ export default function CaseStudiesPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-linear-to-b from-gray-100 via-gray-50 to-white" />
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.4 }}
           transition={{ duration: 1.5 }}
@@ -228,7 +228,7 @@ export default function CaseStudiesPage() {
             background: 'radial-gradient(circle, rgba(200,200,200,0.5) 0%, rgba(240,240,240,0.3) 50%, transparent 70%)'
           }}
         />
-        
+
         {/* Animated grid lines */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
           {[...Array(6)].map((_, i) => (
@@ -242,7 +242,7 @@ export default function CaseStudiesPage() {
             />
           ))}
         </div>
-        
+
         <div className="relative max-w-6xl mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -259,7 +259,7 @@ export default function CaseStudiesPage() {
               style={metallicStyle}
             >
               <span className="absolute inset-0 rounded-full overflow-hidden">
-                <motion.span 
+                <motion.span
                   initial={{ x: '-100%' }}
                   animate={{ x: '200%' }}
                   transition={{ duration: 2, repeat: Infinity, repeatDelay: 4 }}
@@ -283,7 +283,7 @@ export default function CaseStudiesPage() {
                 <span className="bg-linear-to-r from-gray-900 via-gray-600 to-gray-900 bg-clip-text text-transparent">
                   that prove the ROI
                 </span>
-                <motion.span 
+                <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
@@ -298,7 +298,7 @@ export default function CaseStudiesPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-12"
             >
-              Discover how businesses across the UK are using AI automation to capture more leads, 
+              Discover how businesses across the UK are using AI automation to capture more leads,
               reduce costs, and scale operations without scaling headcount.
             </motion.p>
 
@@ -355,11 +355,10 @@ export default function CaseStudiesPage() {
                 transition={{ duration: 0.3, delay: 0.7 + index * 0.05 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className={`relative px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 overflow-hidden ${
-                  activeFilter === filter.id
+                className={`relative px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 overflow-hidden ${activeFilter === filter.id
                     ? "text-white"
                     : "text-gray-600 hover:text-gray-900"
-                }`}
+                  }`}
                 style={activeFilter !== filter.id ? {
                   background: 'linear-gradient(145deg, #f8f8f8 0%, #e8e8e8 100%)',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.08), inset 0 1px 2px rgba(255,255,255,0.8)',
@@ -401,11 +400,10 @@ export default function CaseStudiesPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   onMouseEnter={() => setHoveredCard(study.id)}
                   onMouseLeave={() => setHoveredCard(null)}
-                  className={`group relative bg-white rounded-3xl overflow-hidden transition-all duration-500 ${
-                    study.featured ? "lg:col-span-2" : ""
-                  }`}
+                  className={`group relative bg-white rounded-3xl overflow-hidden transition-all duration-500 ${study.featured ? "lg:col-span-2" : ""
+                    }`}
                   style={{
-                    boxShadow: hoveredCard === study.id 
+                    boxShadow: hoveredCard === study.id
                       ? '0 25px 50px rgba(0,0,0,0.15), 0 10px 20px rgba(0,0,0,0.1)'
                       : '0 4px 20px rgba(0,0,0,0.08)',
                     border: '1px solid rgba(0,0,0,0.06)'
@@ -418,7 +416,7 @@ export default function CaseStudiesPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       className="absolute top-5 left-5 z-20 flex items-center justify-center"
                       style={{
-                        // fixed pill container — size must not change
+                        // fixed pill container - size must not change
                         width: '132px',
                         height: '36px',
                         borderRadius: '9999px',
@@ -436,7 +434,7 @@ export default function CaseStudiesPage() {
                           width={260}
                           height={78}
                           style={{
-                            // larger logo inside the fixed pill — constrained by maxHeight
+                            // larger logo inside the fixed pill - constrained by maxHeight
                             height: '42px',
                             width: 'auto',
                             transform: 'translateY(1px)'
@@ -449,7 +447,7 @@ export default function CaseStudiesPage() {
                   <div className={`${study.featured ? "lg:grid lg:grid-cols-2" : ""}`}>
                     {/* Image Placeholder / Gradient */}
                     <div className={`relative ${study.featured ? "h-64 lg:h-full" : "h-48"} overflow-hidden`}>
-                      <div 
+                      <div
                         className="absolute inset-0 bg-linear-to-br from-gray-200 via-gray-100 to-gray-200"
                         style={{
                           background: 'linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 50%, #d0d0d0 100%)'
@@ -458,7 +456,7 @@ export default function CaseStudiesPage() {
                       {/* Decorative Elements */}
                       <div className="absolute inset-0 flex items-center justify-center">
                         <motion.div
-                          animate={{ 
+                          animate={{
                             rotate: hoveredCard === study.id ? 180 : 0,
                             scale: hoveredCard === study.id ? 1.1 : 1
                           }}
@@ -539,7 +537,7 @@ export default function CaseStudiesPage() {
                           &ldquo;{study.testimonial.quote}&rdquo;
                         </p>
                         <p className="text-xs text-gray-500 mt-2 pl-6">
-                          — {study.testimonial.author}, {study.testimonial.role}
+                          - {study.testimonial.author}, {study.testimonial.role}
                         </p>
                       </div>
 
@@ -630,7 +628,7 @@ export default function CaseStudiesPage() {
 
       {/* CTA Section */}
       <section className="py-20 md:py-28 relative overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 50%, #e8e8e8 100%)'
@@ -645,7 +643,7 @@ export default function CaseStudiesPage() {
             background: 'radial-gradient(circle, rgba(180,180,180,0.4) 0%, transparent 60%)'
           }}
         />
-        
+
         <div className="relative max-w-4xl mx-auto px-4 md:px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -670,7 +668,7 @@ export default function CaseStudiesPage() {
             <p className="text-gray-600 mb-10 max-w-xl mx-auto text-lg">
               Join hundreds of UK businesses using AI automation to capture more leads and close more deals.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/#contact-form">
                 <motion.button

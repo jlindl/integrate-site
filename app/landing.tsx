@@ -2,18 +2,36 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import CallFlow from "./callflow";
-import OutboundFlow from "./outboundflow";
-import MultiChannel from "./multichannel";
 
 export default function Landing() {
-  const [activeTab, setActiveTab] = useState("inbound");
+  const [activeTab, setActiveTab] = useState("leads");
 
   const tabs = [
-    { id: "inbound", label: "Inbound Call Flow" },
-    { id: "outbound", label: "Outbound Dialler" },
-    { id: "multichannel", label: "Multi-Channel Routing" },
+    { id: "leads", label: "Leadgeneration" },
+    { id: "automation", label: "Process automation" },
+    { id: "voice", label: "Voice agents" },
   ];
+
+  const content = {
+    leads: {
+      title: "Lead Generation",
+      description: "Stop chasing. Start closing. We build systems that scrape, enrich, and contact 10,000+ prospects monthly - filling your calendar while you sleep.",
+      features: ["Data Scraping & Enrichment", "AI Personalization", "Automated Follow-ups"],
+      image: "/assets/lead_gen_hero.png"
+    },
+    automation: {
+      title: "Process Automation",
+      description: "Eliminate busywork forever. From invoicing to CRM updates, we replace manual admin with intelligent, error-free workflows that scale infinitely.",
+      features: ["CRM Syncing", "Document Processing", "Financial Reporting"],
+      image: "/assets/process_auto_hero.png"
+    },
+    voice: {
+      title: "Voice Agents",
+      description: "A 24/7 receptionist that never sleeps. Our AI agents handle thousands of simultaneous calls, qualify leads, and book meetings in real-time.",
+      features: ["Inbound & Outbound", "Natural Conversations", "Instant Scheduling"],
+      image: "/assets/voice_agents_hero_v2.png"
+    }
+  };
 
   const partners = [
     "Lead Generation",
@@ -145,38 +163,38 @@ export default function Landing() {
                 whileHover={{ scale: 1.05, color: "#111827" }}
                 className="opacity-80 cursor-default"
               >
-                Construction Firms
+                Recruitment
               </motion.span>
               <motion.span
                 whileHover={{ scale: 1.05, color: "#111827" }}
                 className="opacity-80 cursor-default"
               >
-                Cleaning Contractors
+                Web Designers
               </motion.span>
               <motion.span
                 whileHover={{ scale: 1.05, color: "#111827" }}
                 className="opacity-80 cursor-default"
               >
-                IT Providers
+                Ecommerce
               </motion.span>
               <motion.span
                 whileHover={{ scale: 1.05, color: "#111827" }}
                 className="opacity-80 cursor-default"
               >
-                Accountancy firms
+                Coaches
               </motion.span>
               <motion.span
                 whileHover={{ scale: 1.05, color: "#111827" }}
                 className="opacity-80 cursor-default"
               >
-                Estate Agents
+                Consultants
               </motion.span>
             </div>
           </motion.div>
 
         </motion.div>
 
-        {/* RIGHT SIDE — Animations + Toggle */}
+        {/* RIGHT SIDE - Animations + Toggle */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -185,7 +203,7 @@ export default function Landing() {
         >
 
           {/* Toggle Bar */}
-          <div className="flex gap-2 mb-8 p-2 bg-white backdrop-blur-2xl rounded-2xl border border-gray-200/50 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+          <div className="flex gap-2 mb-8 p-1.5 bg-white/50 backdrop-blur-xl rounded-2xl border border-gray-200/50 shadow-sm">
             {tabs.map((tab, index) => (
               <motion.button
                 key={tab.id}
@@ -195,17 +213,17 @@ export default function Landing() {
                 onClick={() => setActiveTab(tab.id)}
                 whileHover={{ scale: activeTab === tab.id ? 1 : 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`flex-1 text-center py-3 px-3 text-sm font-medium transition-all duration-300 relative rounded-xl
+                className={`flex-1 text-center py-2.5 px-2 text-xs md:text-sm font-medium transition-all duration-300 relative rounded-xl
           ${activeTab === tab.id
-                    ? "text-gray-900 shadow-lg"
-                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50/80"
+                    ? "text-gray-900 shadow-sm"
+                    : "text-gray-500 hover:text-gray-800 hover:bg-white/50"
                   }`}
               >
                 {/* Active background */}
                 {activeTab === tab.id && (
                   <motion.div
                     layoutId="activeTabBg"
-                    className="absolute inset-0 bg-white backdrop-blur-lg rounded-xl border border-gray-300/50 shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
+                    className="absolute inset-0 bg-white rounded-xl border border-gray-200/60 shadow-[0_2px_12px_rgba(0,0,0,0.04)]"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -215,32 +233,64 @@ export default function Landing() {
             ))}
           </div>
 
-          {/* Fixed-height container so the page does not shift */}
+          {/* Fixed-height container */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="relative h-[520px] rounded-2xl bg-white border-2 border-gray-200 shadow-lg overflow-hidden"
+            className="relative h-[480px] rounded-3xl bg-white border border-gray-100 shadow-2xl shadow-gray-200/50 overflow-hidden group"
           >
             <motion.div
               key={activeTab}
-              initial={{ opacity: 0, scale: 0.97 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.97 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              className="absolute inset-0 overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400 p-6"
-              style={{
-                scrollbarWidth: 'thin',
-                scrollbarColor: '#D1D5DB #F3F4F6'
-              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="absolute inset-0"
             >
-              {activeTab === "inbound" && <CallFlow />}
-              {activeTab === "outbound" && <OutboundFlow />}
-              {activeTab === "multichannel" && <MultiChannel />}
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                style={{ backgroundImage: `url(${content[activeTab as keyof typeof content].image})` }}
+              />
+
+              {/* Minimal gradient at the bottom for readability */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent opacity-60" />
+
+              {/* Glassmorphism Card Overlay */}
+              <div className="absolute inset-x-4 bottom-4 md:inset-x-6 md:bottom-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  className="overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.12)] p-6 md:p-8"
+                >
+                  <div className="flex flex-col gap-4">
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2 tracking-tight flex items-center gap-3">
+                        {content[activeTab as keyof typeof content].title}
+                      </h3>
+                      <p className="text-gray-900 font-medium text-base md:text-lg leading-relaxed">
+                        {content[activeTab as keyof typeof content].description}
+                      </p>
+                    </div>
+
+                    {/* Feature tags */}
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {content[activeTab as keyof typeof content].features.map((feature, i) => (
+                        <span
+                          key={i}
+                          className="inline-flex items-center px-2.5 py-1 rounded-md bg-white/40 border border-white/30 text-xs font-semibold text-gray-900 backdrop-blur-sm shadow-sm"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </motion.div>
 
-            {/* Subtle gradient fade at bottom to indicate more content */}
-            <div className="absolute bottom-0 left-0 right-0 h-16 bg-linear-to-t from-white via-white/90 to-transparent pointer-events-none" />
           </motion.div>
 
         </motion.div>
