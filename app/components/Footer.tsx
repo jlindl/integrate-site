@@ -82,7 +82,7 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <p className="mt-3 text-sm text-gray-600">sales@integrate.co.uk</p>
+            <p className="mt-3 text-sm text-gray-600">sales@integrate-tech.co.uk</p>
           </div>
         </div>
 
